@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 2,
+      "id": 36,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Non-graphic depiction of blood on food and a person; no gore details.",
+          "adv": "None",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

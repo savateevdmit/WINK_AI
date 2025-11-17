@@ -1,0 +1,144 @@
+{
+  "scene_results": [
+    {
+      "scID": 26,
+      "snt": [
+        {
+          "id": 0,
+          "vlc": []
+        },
+        {
+          "id": 1,
+          "vlc": []
+        },
+        {
+          "id": 2,
+          "vlc": []
+        },
+        {
+          "id": 3,
+          "vlc": []
+        },
+        {
+          "id": 4,
+          "vlc": []
+        },
+        {
+          "id": 5,
+          "vlc": []
+        },
+        {
+          "id": 6,
+          "vlc": []
+        },
+        {
+          "id": 7,
+          "vlc": [
+            {
+              "label": "WEAPONS_USAGE",
+              "conf": 90
+            },
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "vlc": []
+        },
+        {
+          "id": 9,
+          "vlc": []
+        },
+        {
+          "id": 10,
+          "vlc": []
+        },
+        {
+          "id": 11,
+          "vlc": []
+        },
+        {
+          "id": 12,
+          "vlc": []
+        },
+        {
+          "id": 13,
+          "vlc": []
+        },
+        {
+          "id": 14,
+          "vlc": []
+        },
+        {
+          "id": 15,
+          "vlc": []
+        },
+        {
+          "id": 16,
+          "vlc": []
+        },
+        {
+          "id": 17,
+          "vlc": []
+        },
+        {
+          "id": 18,
+          "vlc": [
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 80
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "vlc": []
+        },
+        {
+          "id": 20,
+          "vlc": []
+        },
+        {
+          "id": 21,
+          "vlc": [
+            {
+              "label": "WEAPONS_USAGE",
+              "conf": 90
+            },
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "vlc": []
+        },
+        {
+          "id": 23,
+          "vlc": []
+        },
+        {
+          "id": 24,
+          "vlc": []
+        },
+        {
+          "id": 25,
+          "vlc": []
+        },
+        {
+          "id": 26,
+          "vlc": []
+        },
+        {
+          "id": 27,
+          "vlc": []
+        }
+      ]
+    }
+  ]
+}

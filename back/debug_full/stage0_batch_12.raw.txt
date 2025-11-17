@@ -1,0 +1,29 @@
+<|channel|>analysis<|message|>We need to output JSON with key "non_neutral" and list of scene indices that likely contain any listed categories. We must be inclusive: if uncertain, include the index. So we need to scan each scene for content that might match categories.
+
+Categories list: VIOLENCE_GRAPHIC, VIOLENCE_NON_GRAPHIC, MURDER_HOMICIDE, SUICIDE_SELF_HARM, SEX_EXPLICIT, SEX_SUGGESTIVE, SEXUAL_VIOLENCE, NUDITY_EXPLICIT, NUDITY_NONSEXUAL, DRUGS_USE_DEPICTION, DRUGS_MENTION_NON_DETAILED, ALCOHOL_USE, TOBACCO_USE, CRIME_INSTRUCTIONS, CRIMINAL_ACTIVITY, WEAPONS_USAGE, WEAPONS_MENTION, PROFANITY_OBSCENE, ABUSE_HATE_EXTREMISM, HORROR_FEAR, DANGEROUS_IMITABLE_ACTS, MEDICAL_GORE_DETAILS, GAMBLING, MILD_CONFLICT, EXTREMISM_PROPAGANDA, NAZISM_PROPAGANDA, FASCISM_PROPAGANDA.
+
+We need to see if any scenes contain these. Let's examine each scene:
+
+Scene 12: It's about museum, phone call, no violence, no crime, no drugs, no sexual content. There's mention of "колдун" (wizard). No categories. So likely neutral.
+
+Scene 13: Museum, history, theft of stones, but no explicit mention of crime instructions or criminal activity? It mentions that stones were stolen a year ago. That is a crime, but it's just mention of theft. Does that count as CRIMINAL_ACTIVITY? The category "CRIMINAL_ACTIVITY" likely refers to depiction of criminal acts. The scene mentions theft but not depicting it. Might be borderline. But we should be inclusive: if uncertain, include. So maybe include 13.
+
+Also mention of "потеря", "украдены". That is a crime. So include 13.
+
+Scene 14: phone call, no crime. No categories.
+
+Scene 15: Zoya pours water on Varvara, insults, says "Я расследую серьёзное преступление." She says "за его раскрытие мне точно дадут медаль." She is investigating a serious crime. There's no depiction of violence. But mention of crime. Might be considered CRIMINAL_ACTIVITY? It's just investigation. Not necessarily. But we might include 15 as uncertain.
+
+Scene 16: no crime, just reading.
+
+Scene 17: no crime.
+
+Thus likely indices: 13, maybe 15. Also maybe 12? No. 14? No. 16? No. 17? No.
+
+Also check for other categories: violence? None. Drugs? None. Alcohol? None. Tobacco? None. Profanity? There's some insults but not profanity. "Эгоистка!" "Лучше бы у меня совсем не было сестры!" Not obscene. So no PROFANITY_OBSCENE.
+
+Sexual? No.
+
+So final list: [13, 15] maybe also 12? But 12 is neutral. 14 is neutral. 16,17 neutral.
+
+Thus output JSON: {"non_neutral":[13,15]}.<|end|><|start|>assistant<|channel|>final<|message|>{"non_neutral":[13,15]}

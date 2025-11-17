@@ -1,0 +1,9 @@
+<|channel|>analysis<|message|>We need to produce JSON with ans array. For each input label produce a det object. Input: scID 27, id 10, pt sentence "Капсаицин его тоже отключает!", t "Семёнов хватает острое масло, льёт его себе в рот, слезы текут ручьём.", nt "АМ (с опаской)", vlc ["MILD_CONFLICT"].
+
+We need to evaluate content. The text: "Капсаицин его тоже отключает!" meaning capsaicin also disables him. "Семёнов хватает острое масло, льёт его себе в рот, слезы текут ручьём." Means Semenov takes hot oil, pours it into his mouth, tears flow like a stream. This is mild conflict? It's describing someone eating spicy oil causing tears. No violence, no profanity, no drugs. So content is mild conflict. According to policy, mild conflict is allowed. So ok true. No det objects for other labels. We produce one det object with label "MILD_CONFLICT". sev: Mild (score 25-49). scr: from bs: MILD_CONFLICT score 25. But we need to compute score? The base score for MILD_CONFLICT is 25. Then modifiers? None. So final score 25. Severity: Mild. Provide rsn: "Mild conflict due to spicy food causing tears." adv: maybe none. ok: true. suggest: null.
+
+Return JSON: {"ans":[{"scID":27,"id":10,"det":[{"label":"MILD_CONFLICT","sev":"Mild","scr":25,"rsn":"Describes mild conflict involving spicy oil causing tears.","adv":"","ok":true,"suggest":null}]}]}
+
+Check format: adv string maybe empty. Provide "".
+
+Return only JSON.<|end|><|start|>assistant<|channel|>final<|message|>{"ans":[{"scID":27,"id":10,"det":[{"label":"MILD_CONFLICT","sev":"Mild","scr":25,"rsn":"Describes mild conflict involving spicy oil causing tears.","adv":"","ok":true,"suggest":null}]}]}

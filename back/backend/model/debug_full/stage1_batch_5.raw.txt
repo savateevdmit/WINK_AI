@@ -1,0 +1,36 @@
+<|channel|>analysis<|message|>We need to analyze Russian screenplay sentences. Return JSON with scene_results array. Each scene must have at least one sentence with at least one label. If all are neutral, assign MILD_CONFLICT to the most contextually active sentence.
+
+We have input: scene 6, two sentences:
+
+id0: "Алёна, офигевая, смотрит на корабль на столе."
+id1: "Спешно забирает гоу-про, выходит."
+
+We need to check for any of the allowed labels. Let's examine each sentence.
+
+Sentence 0: "Алёна, офигевая, смотрит на корабль на столе." Means "Alena, amazing, looks at a ship on the table." No violence, no drugs, no profanity. So neutral.
+
+Sentence 1: "Спешно забирает гоу-про, выходит." Means "Rushed to take go-pro, exits." No violence, no drugs, no profanity. Neutral.
+
+Thus all sentences are neutral. We must assign MILD_CONFLICT to the most contextually active sentence. Which is more contextually active? Sentence 1 seems more action: "Спешно забирает гоу-про, выходит." So we label that with MILD_CONFLICT.
+
+We need to produce JSON:
+
+{
+"scene_results":[
+ {"scID":6,"snt":[{"id":0,"vlc":[]},{"id":1,"vlc":[{"label":"MILD_CONFLICT","conf":?}]}]}
+]
+}
+
+But we must provide confidence 0..100. Since it's a rule-based assignment, maybe 100. But we can choose 100.
+
+Also note: Each scene must have at least one sentence with at least one label. So we need to include the label for sentence 1. For sentence 0, we can leave vlc empty array or omit? The format requires each snt object has id and vlc array. We can provide empty array.
+
+Thus final JSON:
+
+{
+"scene_results":[
+ {"scID":6,"snt":[{"id":0,"vlc":[]},{"id":1,"vlc":[{"label":"MILD_CONFLICT","conf":100}]}]}
+]
+}
+
+We must not include original texts back. So just output JSON.<|end|><|start|>assistant<|channel|>final<|message|>{"scene_results":[{"scID":6,"snt":[{"id":0,"vlc":[]},{"id":1,"vlc":[{"label":"MILD_CONFLICT","conf":100}]}]}]}

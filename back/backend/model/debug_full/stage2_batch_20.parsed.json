@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 28,
+      "id": 9,
+      "det": [
+        {
+          "label": "MURDER_HOMICIDE",
+          "sev": "Moderate",
+          "scr": 70,
+          "rsn": "Depicts an attempt to kill many people without graphic detail.",
+          "adv": "",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 8,
+      "id": 5,
+      "det": [
+        {
+          "label": "WEAPONS_USAGE",
+          "sev": "Moderate",
+          "scr": 55,
+          "rsn": "Weapon displayed and potentially used.",
+          "adv": "Ensure context does not glorify weapon use.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

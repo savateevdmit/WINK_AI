@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 21,
+      "id": 9,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Non-graphic physical aggression without blood or injury.",
+          "adv": "Consider reducing violence or providing context if needed.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

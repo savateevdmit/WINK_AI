@@ -1,0 +1,18 @@
+{
+  "scene_results": [
+    {
+      "scID": 27,
+      "snt": [
+        {
+          "id": 6,
+          "vlc": [
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

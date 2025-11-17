@@ -1,0 +1,52 @@
+{
+  "ans": [
+    {
+      "scID": 17,
+      "id": 10,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Небольшой конфликт без насилия.",
+          "adv": "Можно оставить, но убедитесь, что конфликт не перерастает в насилие.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 21,
+      "id": 1,
+      "det": [
+        {
+          "label": "MURDER_HOMICIDE",
+          "sev": "Moderate",
+          "scr": 70,
+          "rsn": "Описание попытки убийства.",
+          "adv": "Уберите или смягчите описание насилия.",
+          "ok": false,
+          "suggest": "REMOVE_VIOLENCE"
+        },
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Нарушение без крови.",
+          "adv": "Сократите детали насилия.",
+          "ok": false,
+          "suggest": "REMOVE_VIOLENCE"
+        },
+        {
+          "label": "WEAPONS_USAGE",
+          "sev": "Moderate",
+          "scr": 55,
+          "rsn": "Использование оружия.",
+          "adv": "Уберите упоминание оружия или замените на безопасный вариант.",
+          "ok": false,
+          "suggest": "REMOVE_VIOLENCE"
+        }
+      ]
+    }
+  ]
+}

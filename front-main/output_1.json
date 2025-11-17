@@ -1,0 +1,1095 @@
+{
+  "document": "input.json",
+  "final_rating": "18+",
+  "scenes_total": 69,
+  "parents_guide": {
+    "Violence_Gore": {
+      "severity": "Severe",
+      "episodes": 14,
+      "scenes_with_issues_percent": 13.0,
+      "examples": [
+        {
+          "scene_index": 5,
+          "page": null,
+          "text": "Тут ребенка убить пытались!",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "У Юли паника, она пытается убежать.",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Может, и правда девчонку угробить хотели...",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 13,
+          "page": null,
+          "text": "Маша могла погибнуть!",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 49,
+          "page": null,
+          "text": "Юля идет к выходу, Володя хватает ее за руку.",
+          "labels": [
+            "VIOLENCE_NON_GRAPHIC"
+          ],
+          "severity_local": "Moderate"
+        }
+      ]
+    },
+    "Sex_Nudity": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Alcohol_Drugs_Smoking": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Profanity": {
+      "severity": "Severe",
+      "episodes": 2,
+      "scenes_with_issues_percent": 1.4,
+      "examples": [
+        {
+          "scene_index": 63,
+          "page": null,
+          "text": "(злится) Да пошла ты!..",
+          "labels": [
+            "PROFANITY_OBSCENE"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 63,
+          "page": null,
+          "text": "(злится) Ты издеваешься?",
+          "labels": [
+            "PROFANITY_OBSCENE"
+          ],
+          "severity_local": "Severe"
+        }
+      ]
+    },
+    "Crime": {
+      "severity": "Severe",
+      "episodes": 23,
+      "scenes_with_issues_percent": 4.3,
+      "examples": [
+        {
+          "scene_index": 5,
+          "page": null,
+          "text": "Тут ребенка убить пытались!",
+          "labels": [
+            "CRIME_INSTRUCTIONS"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 23,
+          "page": null,
+          "text": "Мы ее уже наказали.",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 23,
+          "page": null,
+          "text": "Надолго запомнит.",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 23,
+          "page": null,
+          "text": "А что случилось-то?",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 23,
+          "page": null,
+          "text": "Что ты вдруг решил соскочить?",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Moderate"
+        }
+      ]
+    },
+    "Weapons": {
+      "severity": "Moderate",
+      "episodes": 4,
+      "scenes_with_issues_percent": 4.3,
+      "examples": [
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "У Юли паника, она пытается убежать.",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Может, и правда девчонку угробить хотели...",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 67,
+          "page": null,
+          "text": "Юля достаёт пистолет.",
+          "labels": [
+            "WEAPONS_MENTION"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 67,
+          "page": null,
+          "text": "Юля стреляет.",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Moderate"
+        }
+      ]
+    },
+    "Frightening_Intense": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Gambling": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Other": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    }
+  },
+  "problem_fragments": [
+    {
+      "scene_index": 5,
+      "scene_heading": "8-6. ИНТ. ШКОЛА. АКТОВЫЙ ЗАЛ. СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 26,
+      "text": "Тут ребенка убить пытались!",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "CRIME_INSTRUCTIONS"
+      ],
+      "evidence_spans": {
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "CRIME_INSTRUCTIONS": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Severe",
+      "recommendations": []
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "8-9. ИНТ. ШКОЛА. ХОЛЛ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 28,
+      "text": "У Юли паника, она пытается убежать.",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "WEAPONS_USAGE"
+      ],
+      "evidence_spans": {
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "WEAPONS_USAGE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 9,
+      "scene_heading": "8-10. ИНТ. ШКОЛА. АКТОВЫЙ ЗАЛ. СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 17,
+      "text": "Может, и правда девчонку угробить хотели...",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "WEAPONS_USAGE"
+      ],
+      "evidence_spans": {
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "WEAPONS_USAGE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 13,
+      "scene_heading": "8-14. ИНТ. квартира. кухня. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 16,
+      "text": "Маша могла погибнуть!",
+      "labels": [
+        "MURDER_HOMICIDE"
+      ],
+      "evidence_spans": {
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 4,
+      "text": "Мы ее уже наказали.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 5,
+      "text": "Надолго запомнит.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "А что случилось-то?",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Что ты вдруг решил соскочить?",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 8,
+      "text": "Да опасно стало.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 9,
+      "text": "Менты кругом.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 10,
+      "text": "Я слышал, возле школы задержали кого-то.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 11,
+      "text": "Ну и хорошо, что задержали!",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 12,
+      "text": "Значит, на нас не думают.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 13,
+      "text": "Ну, может, и хватит тогда?",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 14,
+      "text": "Нет!",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 15,
+      "text": "Мне отец звонил, мы какой-то суд уже проиграли.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 16,
+      "text": "Если они не остановятся, меня посадят.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 17,
+      "text": "С ней по-любому кончать надо!",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 18,
+      "text": "Где она сейчас тусуется, знаешь?",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 19,
+      "text": "Знаю, но она сейчас одна не ходит.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 20,
+      "text": "Хреново.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 21,
+      "text": "Тут на днях фестиваль будет, в местном ДК.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 22,
+      "text": "Может быть, там она будет.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 23,
+      "text": "Ну вот и отлично!",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 23,
+      "scene_heading": "8-25. НАТ. двор возле ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 24,
+      "text": "Действуй!",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 49,
+      "scene_heading": "8-51. ИНТ. БУДКА КИНОМЕХАНИКА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "Юля идет к выходу, Володя хватает ее за руку.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 49,
+      "scene_heading": "8-51. ИНТ. БУДКА КИНОМЕХАНИКА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "Юля вырывается и бежит к выходу, Володя ее догоняет, хватает.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 49,
+      "scene_heading": "8-51. ИНТ. БУДКА КИНОМЕХАНИКА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Происходит небольшая борьба.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 53,
+      "scene_heading": "8-55. ИНТ. СЦЕНА / НАД СЦЕНОЙ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "Мы видим руки Кости, которые пилят трос со второй части фермы.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "evidence_spans": {
+        "CRIMINAL_ACTIVITY": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 61,
+      "scene_heading": "8-63. ИНТ. над сценой / СЦЕНА - ДЕНЬ",
+      "page": null,
+      "sentence_index": 5,
+      "text": "Никита резко бьёт Костю по руке, Костя роняет гаечный ключ.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 62,
+      "scene_heading": "8-64. ИНТ. НАД СЦЕНОЙ / зрительный зал. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "Никита хватает Костю, Костя бьёт его в лицо.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC",
+        "MURDER_HOMICIDE"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 62,
+      "scene_heading": "8-64. ИНТ. НАД СЦЕНОЙ / зрительный зал. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 3,
+      "text": "Костя разворачивается, чтобы сбросить с себя Никиту, но тут подбегает Володя и скручивает Костю.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC",
+        "MURDER_HOMICIDE"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "За кулисами Никита и Володя поймали Костю.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC",
+        "MURDER_HOMICIDE"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Он уже скручен и в наручниках.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC",
+        "MURDER_HOMICIDE"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "MURDER_HOMICIDE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 17,
+      "text": "(злится) Да пошла ты!..",
+      "labels": [
+        "PROFANITY_OBSCENE"
+      ],
+      "evidence_spans": {
+        "PROFANITY_OBSCENE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Severe",
+      "recommendations": []
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 22,
+      "text": "(злится) Ты издеваешься?",
+      "labels": [
+        "PROFANITY_OBSCENE"
+      ],
+      "evidence_spans": {
+        "PROFANITY_OBSCENE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Severe",
+      "recommendations": []
+    },
+    {
+      "scene_index": 67,
+      "scene_heading": "8-69. НАТ. У ВХОДА В ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "Юля достаёт пистолет.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "evidence_spans": {
+        "WEAPONS_MENTION": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": []
+    },
+    {
+      "scene_index": 67,
+      "scene_heading": "8-69. НАТ. У ВХОДА В ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 8,
+      "text": "Юля стреляет.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        },
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    },
+    {
+      "scene_index": 67,
+      "scene_heading": "8-69. НАТ. У ВХОДА В ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 10,
+      "text": "Пуля попадает в Никиту, его рубашка окрашивается красным.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "",
+          "score": null,
+          "reason": "",
+          "advice": null,
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": []
+    }
+  ],
+  "processing_seconds": 27.0
+}

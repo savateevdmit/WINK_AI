@@ -1,0 +1,27 @@
+{
+  "scene_results": [
+    {
+      "scID": 22,
+      "snt": [
+        {
+          "id": 1,
+          "vlc": [
+            {
+              "label": "SEX_SUGGESTIVE",
+              "conf": 80
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "vlc": [
+            {
+              "label": "SEX_SUGGESTIVE",
+              "conf": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

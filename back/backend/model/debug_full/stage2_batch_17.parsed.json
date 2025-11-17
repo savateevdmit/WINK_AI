@@ -1,0 +1,28 @@
+{
+  "ans": [
+    {
+      "scID": 26,
+      "id": 7,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Violence without graphic detail",
+          "adv": "Consider reducing intensity of violence depiction",
+          "ok": true,
+          "suggest": null
+        },
+        {
+          "label": "WEAPONS_USAGE",
+          "sev": "Moderate",
+          "scr": 55,
+          "rsn": "Use of weapon (pepper spray)",
+          "adv": "Ensure context justifies weapon use",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

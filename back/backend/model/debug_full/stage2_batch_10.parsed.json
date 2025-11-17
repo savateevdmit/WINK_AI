@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 16,
+      "id": 2,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Contains mild conflict language.",
+          "adv": "",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

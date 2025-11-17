@@ -1,0 +1,38 @@
+{
+  "scene_results": [
+    {
+      "scID": 0,
+      "snt": [
+        {
+          "id": 0,
+          "vlc": []
+        },
+        {
+          "id": 1,
+          "vlc": []
+        },
+        {
+          "id": 2,
+          "vlc": []
+        },
+        {
+          "id": 3,
+          "vlc": []
+        },
+        {
+          "id": 4,
+          "vlc": []
+        },
+        {
+          "id": 5,
+          "vlc": [
+            {
+              "label": "MURDER_HOMICIDE",
+              "conf": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

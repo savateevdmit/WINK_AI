@@ -1,0 +1,49 @@
+{
+  "ans": [
+    {
+      "scID": 2,
+      "id": 3,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Нарушение не содержит крови, жестокости или насилия.",
+          "adv": "Можно оставить без изменений.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 3,
+      "id": 0,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Небольшой конфликт без проявления насилия.",
+          "adv": "Можно оставить без изменений.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 5,
+      "id": 1,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Наличие ножа в руке, но без действия и насилия.",
+          "adv": "Можно оставить без изменений.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "scene_results": [
+    {
+      "scID": 32,
+      "snt": [
+        {
+          "id": 5,
+          "vlc": [
+            {
+              "label": "WEAPONS_MENTION",
+              "conf": 70
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "vlc": [
+            {
+              "label": "WEAPONS_USAGE",
+              "conf": 85
+            },
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 80
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "vlc": [
+            {
+              "label": "WEAPONS_USAGE",
+              "conf": 85
+            },
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 80
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "vlc": [
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

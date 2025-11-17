@@ -1,0 +1,138 @@
+{
+  "scene_results": [
+    {
+      "scID": 8,
+      "snt": [
+        {
+          "id": 0,
+          "vlc": []
+        },
+        {
+          "id": 1,
+          "vlc": []
+        },
+        {
+          "id": 2,
+          "vlc": []
+        },
+        {
+          "id": 3,
+          "vlc": []
+        },
+        {
+          "id": 4,
+          "vlc": []
+        },
+        {
+          "id": 5,
+          "vlc": [
+            {
+              "label": "WEAPONS_MENTION",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "vlc": []
+        },
+        {
+          "id": 7,
+          "vlc": [
+            {
+              "label": "MILD_CONFLICT",
+              "conf": 70
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "vlc": []
+        },
+        {
+          "id": 9,
+          "vlc": []
+        },
+        {
+          "id": 10,
+          "vlc": []
+        },
+        {
+          "id": 11,
+          "vlc": []
+        },
+        {
+          "id": 12,
+          "vlc": []
+        },
+        {
+          "id": 13,
+          "vlc": []
+        },
+        {
+          "id": 14,
+          "vlc": []
+        },
+        {
+          "id": 15,
+          "vlc": []
+        },
+        {
+          "id": 16,
+          "vlc": [
+            {
+              "label": "WEAPONS_MENTION",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "vlc": []
+        },
+        {
+          "id": 18,
+          "vlc": []
+        },
+        {
+          "id": 19,
+          "vlc": [
+            {
+              "label": "MILD_CONFLICT",
+              "conf": 70
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "vlc": []
+        },
+        {
+          "id": 21,
+          "vlc": []
+        },
+        {
+          "id": 22,
+          "vlc": []
+        },
+        {
+          "id": 23,
+          "vlc": [
+            {
+              "label": "WEAPONS_MENTION",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "vlc": []
+        },
+        {
+          "id": 25,
+          "vlc": []
+        }
+      ]
+    }
+  ]
+}

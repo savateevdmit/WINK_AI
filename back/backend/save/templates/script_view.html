@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --fg: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --accent: #374151;
+    }
+    html, body {
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    .container {
+      max-width: 980px;
+      margin: 24px auto;
+      padding: 0 16px 48px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 16px 0;
+    }
+    .scene {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 12px 0;
+      background: #fff;
+    }
+    .scene-heading {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 2px 0 8px 0;
+      color: var(--accent);
+    }
+    .cast {
+      font-size: 12px;
+      text-decoration: underline;
+      margin: 4px 0 8px 0;
+    }
+    .action {
+      white-space: pre-wrap;
+      margin: 6px 0;
+    }
+    .speaker {
+      text-align: center;
+      font-weight: 700;
+      margin: 6px 0 0 0;
+    }
+    .dialogue {
+      white-space: pre-wrap;
+      margin: 6px 0 8px 0;
+      padding-left: 2.5em;
+    }
+    .ln {
+      color: var(--muted);
+      font-size: 11px;
+      margin-left: 6px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .hr {
+      height: 1px;
+      background: var(--border);
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">{{ title }}</div>
+
+    {% for sc in scenes %}
+    <div class="scene">
+      <div class="scene-heading">{{ sc.heading_view }}</div>
+      {# Пример мета-информации (можно расширить при желании):
+      <div class="meta">Стр.: {{ sc.page or "" }} · Сцена: {{ sc.scene_index }}</div>
+      #}
+
+      {% if sc.cast_list and sc.cast_list|length > 0 %}
+        {% for cast in sc.cast_list %}
+          {% if cast.text %}
+            <div class="cast">{{ cast.text }}</div>
+          {% endif %}
+        {% endfor %}
+        <div class="hr"></div>
+      {% endif %}
+
+      {% if sc.sentences_view %}
+        {% for s in sc.sentences_view %}
+          {% set txt = (s.text or '') %}
+          {% set speaker = s.speaker %}
+          {% set kind = s.kind or 'action' %}
+          {% set ln = s.line_no %}
+          {% if (kind == 'dialogue') or (speaker and speaker|string|length > 0) %}
+            {% if speaker %}
+              <div class="speaker">{{ speaker | upper }}</div>
+            {% endif %}
+            <div class="dialogue">
+              {{ txt }}
+              {% if show_lines and ln is not none %}
+                <span class="ln">[ln:{{ ln }}]</span>
+              {% endif %}
+            </div>
+          {% else %}
+            <div class="action">
+              {{ txt }}
+              {% if show_lines and ln is not none %}
+                <span class="ln">[ln:{{ ln }}]</span>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {# Fallback: разбиваем content по пустой строке и выводим как action #}
+        {% if sc.content_norm %}
+          {% for blk in sc.content_norm.split('\n\n') %}
+            <div class="action">{{ blk }}</div>
+          {% endfor %}
+        {% else %}
+          <div class="action"></div>
+        {% endif %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

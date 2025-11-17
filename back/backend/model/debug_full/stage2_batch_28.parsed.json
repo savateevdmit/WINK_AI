@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 34,
+      "id": 7,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Non-graphic depiction of violence.",
+          "adv": "Consider adding context or reducing intensity.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

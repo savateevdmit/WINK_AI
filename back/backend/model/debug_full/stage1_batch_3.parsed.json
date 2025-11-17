@@ -1,0 +1,22 @@
+{
+  "scene_results": [
+    {
+      "scID": 3,
+      "snt": [
+        {
+          "id": 0,
+          "vlc": [
+            {
+              "label": "MILD_CONFLICT",
+              "conf": 100
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "vlc": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,687 @@
+{
+  "document": "input.json",
+  "final_rating": "18+",
+  "scenes_total": 69,
+  "parents_guide": {
+    "Violence_Gore": {
+      "severity": "Severe",
+      "episodes": 10,
+      "scenes_with_issues_percent": 11.6,
+      "examples": [
+        {
+          "scene_index": 5,
+          "page": null,
+          "text": "Тут ребенка убить пытались!",
+          "labels": [
+            "MURDER_HOMICIDE",
+            "VIOLENCE_GRAPHIC"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "У Юли паника, она пытается убежать.",
+          "labels": [
+            "MURDER_HOMICIDE",
+            "VIOLENCE_GRAPHIC"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Может, и правда девчонку угробить хотели...",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Стекло выбрось, а гвоздями - люк заколоти!",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Намертво!",
+          "labels": [
+            "MURDER_HOMICIDE"
+          ],
+          "severity_local": "Severe"
+        }
+      ]
+    },
+    "Sex_Nudity": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Alcohol_Drugs_Smoking": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Profanity": {
+      "severity": "Mild",
+      "episodes": 2,
+      "scenes_with_issues_percent": 1.4,
+      "examples": [
+        {
+          "scene_index": 63,
+          "page": null,
+          "text": "(злится) Да пошла ты!..",
+          "labels": [
+            "PROFANITY_OBSCENE"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 63,
+          "page": null,
+          "text": "(злится) Ты издеваешься?",
+          "labels": [
+            "PROFANITY_OBSCENE"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Crime": {
+      "severity": "Mild",
+      "episodes": 6,
+      "scenes_with_issues_percent": 5.8,
+      "examples": [
+        {
+          "scene_index": 4,
+          "page": null,
+          "text": "Костя зло пинает мусорку, переворачивает ее, вымещает на ней свой гнев.",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Володя показывает коллегам, чтобы бежали за ней.",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Догоните ее.",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Полицейский 1 и Полицейский 2 бегут за Юлей.",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 18,
+          "page": null,
+          "text": "Слушайте, может это маньяк какой-то?",
+          "labels": [
+            "CRIMINAL_ACTIVITY"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Weapons": {
+      "severity": "Mild",
+      "episodes": 14,
+      "scenes_with_issues_percent": 14.5,
+      "examples": [
+        {
+          "scene_index": 4,
+          "page": null,
+          "text": "Костя зло пинает мусорку, переворачивает ее, вымещает на ней свой гнев.",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Володя показывает коллегам, чтобы бежали за ней.",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Полицейский 1 и Полицейский 2 бегут за Юлей.",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 15,
+          "page": null,
+          "text": "Вы же все с пистолетами ходите!",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 34,
+          "page": null,
+          "text": "Начинает ковыряться ножом в замке, ничего не получается.",
+          "labels": [
+            "WEAPONS_MENTION"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Frightening_Intense": {
+      "severity": "Severe",
+      "episodes": 4,
+      "scenes_with_issues_percent": 2.9,
+      "examples": [
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Может, и правда девчонку угробить хотели...",
+          "labels": [
+            "DANGEROUS_IMITABLE_ACTS"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Стекло выбрось, а гвоздями - люк заколоти!",
+          "labels": [
+            "DANGEROUS_IMITABLE_ACTS"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 9,
+          "page": null,
+          "text": "Намертво!",
+          "labels": [
+            "DANGEROUS_IMITABLE_ACTS"
+          ],
+          "severity_local": "Severe"
+        },
+        {
+          "scene_index": 18,
+          "page": null,
+          "text": "Слушайте, может это маньяк какой-то?",
+          "labels": [
+            "DANGEROUS_IMITABLE_ACTS"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Gambling": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Other": {
+      "severity": "Mild",
+      "episodes": 4,
+      "scenes_with_issues_percent": 4.3,
+      "examples": [
+        {
+          "scene_index": 49,
+          "page": null,
+          "text": "Происходит небольшая борьба.",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 62,
+          "page": null,
+          "text": "Никита хватает Костю, Костя бьёт его в лицо.",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 63,
+          "page": null,
+          "text": "(злится) Да пошла ты!..",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 63,
+          "page": null,
+          "text": "(злится) Ты издеваешься?",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    }
+  },
+  "problem_fragments": [
+    {
+      "scene_index": 4,
+      "scene_heading": "8-5. НАТ. ДВОР ШКОЛЫ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 17,
+      "text": "Костя зло пинает мусорку, переворачивает ее, вымещает на ней свой гнев.",
+      "labels": [
+        "CRIMINAL_ACTIVITY",
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider providing a safe outlet for frustration and encouraging non-violent conflict resolution."
+      ]
+    },
+    {
+      "scene_index": 5,
+      "scene_heading": "8-6. ИНТ. ШКОЛА. АКТОВЫЙ ЗАЛ. СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 26,
+      "text": "Тут ребенка убить пытались!",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "VIOLENCE_GRAPHIC"
+      ],
+      "severity_local": "Severe",
+      "recommendations": [
+        "Consider removing or providing a content warning"
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "8-9. ИНТ. ШКОЛА. ХОЛЛ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 28,
+      "text": "У Юли паника, она пытается убежать.",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "VIOLENCE_GRAPHIC"
+      ],
+      "severity_local": "Severe",
+      "recommendations": [
+        "Avoid depicting or describing the act in detail"
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "8-9. ИНТ. ШКОЛА. ХОЛЛ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 29,
+      "text": "Володя показывает коллегам, чтобы бежали за ней.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "CRIMINAL_ACTIVITY"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что сцена не содержит насильственных действий с оружием."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "8-9. ИНТ. ШКОЛА. ХОЛЛ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 31,
+      "text": "Догоните ее.",
+      "labels": [
+        "CRIMINAL_ACTIVITY"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider removing or rephrasing the directive to avoid depicting criminal behavior."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "8-9. ИНТ. ШКОЛА. ХОЛЛ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 33,
+      "text": "Полицейский 1 и Полицейский 2 бегут за Юлей.",
+      "labels": [
+        "CRIMINAL_ACTIVITY",
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider providing context or clarifying the nature of the chase to ensure compliance with policy.",
+        "Clarify whether weapons are actually used or merely implied to avoid policy violations."
+      ]
+    },
+    {
+      "scene_index": 9,
+      "scene_heading": "8-10. ИНТ. ШКОЛА. АКТОВЫЙ ЗАЛ. СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 17,
+      "text": "Может, и правда девчонку угробить хотели...",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "DANGEROUS_IMITABLE_ACTS"
+      ],
+      "severity_local": "Severe",
+      "recommendations": [
+        "Content depicts violent intent and potential real-world harm. Flag for removal or severe restriction.",
+        "Content encourages potentially dangerous behavior. Flag for removal or severe restriction."
+      ]
+    },
+    {
+      "scene_index": 9,
+      "scene_heading": "8-10. ИНТ. ШКОЛА. АКТОВЫЙ ЗАЛ. СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 18,
+      "text": "Стекло выбрось, а гвоздями - люк заколоти!",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "DANGEROUS_IMITABLE_ACTS"
+      ],
+      "severity_local": "Severe",
+      "recommendations": [
+        "Avoid content with explicit threats of homicide"
+      ]
+    },
+    {
+      "scene_index": 9,
+      "scene_heading": "8-10. ИНТ. ШКОЛА. АКТОВЫЙ ЗАЛ. СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 19,
+      "text": "Намертво!",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "DANGEROUS_IMITABLE_ACTS"
+      ],
+      "severity_local": "Severe",
+      "recommendations": [
+        "Avoid content that depicts or encourages violent actions"
+      ]
+    },
+    {
+      "scene_index": 13,
+      "scene_heading": "8-14. ИНТ. квартира. кухня. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 16,
+      "text": "Маша могла погибнуть!",
+      "labels": [
+        "MURDER_HOMICIDE"
+      ],
+      "severity_local": "Severe",
+      "recommendations": [
+        "Provide immediate support and encourage reporting to authorities. Offer resources for crisis intervention and ensure safety measures are in place."
+      ]
+    },
+    {
+      "scene_index": 15,
+      "scene_heading": "8-17. ИНТ. класс школы. - вечер",
+      "page": null,
+      "sentence_index": 14,
+      "text": "Вы же все с пистолетами ходите!",
+      "labels": [
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider providing a safe environment and ensuring the individual feels supported. If the threat is credible, involve security or law enforcement."
+      ]
+    },
+    {
+      "scene_index": 18,
+      "scene_heading": "8-20. НАТ. ДВОР ШКОЛЫ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 24,
+      "text": "Слушайте, может это маньяк какой-то?",
+      "labels": [
+        "CRIMINAL_ACTIVITY",
+        "DANGEROUS_IMITABLE_ACTS"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "None"
+      ]
+    },
+    {
+      "scene_index": 34,
+      "scene_heading": "8-36. НАТ. У ЗАДНЕГО ФАСАДА ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 1,
+      "text": "Начинает ковыряться ножом в замке, ничего не получается.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid depicting or encouraging the use of weapons. Provide safe alternatives or suggest seeking professional help if the context involves violence."
+      ]
+    },
+    {
+      "scene_index": 47,
+      "scene_heading": "8-49. ИНТ. БУДКА КИНОМЕХАНИКА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "Юля бросает взгляд на пистолет Володи.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider removing or contextualizing the weapon mention to reduce perceived threat"
+      ]
+    },
+    {
+      "scene_index": 48,
+      "scene_heading": "8-50. ИНТ. НАД СЦЕНОЙ/СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "Мы видим, что с одной стороны фермы мужская рука отпиливает трос.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "WEAPONS_MENTION"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider providing context or a warning if the content is intended for sensitive audiences."
+      ]
+    },
+    {
+      "scene_index": 48,
+      "scene_heading": "8-50. ИНТ. НАД СЦЕНОЙ/СЦЕНА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 4,
+      "text": "Мы видим, что у другого конца фермы сидит Костя с пилой.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "WEAPONS_MENTION"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid depicting or describing the weapon in detail"
+      ]
+    },
+    {
+      "scene_index": 49,
+      "scene_heading": "8-51. ИНТ. БУДКА КИНОМЕХАНИКА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "Юля вырывается и бежит к выходу, Володя ее догоняет, хватает.",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid situations where weapons may be used"
+      ]
+    },
+    {
+      "scene_index": 49,
+      "scene_heading": "8-51. ИНТ. БУДКА КИНОМЕХАНИКА. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Происходит небольшая борьба.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что сцена не содержит насилия, которое может вызвать дискомфорт у зрителей"
+      ]
+    },
+    {
+      "scene_index": 61,
+      "scene_heading": "8-63. ИНТ. над сценой / СЦЕНА - ДЕНЬ",
+      "page": null,
+      "sentence_index": 5,
+      "text": "Никита резко бьёт Костю по руке, Костя роняет гаечный ключ.",
+      "labels": [
+        "MURDER_HOMICIDE",
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid using weapons in conflict resolution"
+      ]
+    },
+    {
+      "scene_index": 62,
+      "scene_heading": "8-64. ИНТ. НАД СЦЕНОЙ / зрительный зал. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "Никита хватает Костю, Костя бьёт его в лицо.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC",
+        "MILD_CONFLICT"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid physical confrontations"
+      ]
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Он уже скручен и в наручниках.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "CRIMINAL_ACTIVITY"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid depicting or glorifying the use of restraints or weapons.",
+        "Avoid depicting or glorifying criminal activity."
+      ]
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 17,
+      "text": "(злится) Да пошла ты!..",
+      "labels": [
+        "PROFANITY_OBSCENE",
+        "MILD_CONFLICT"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider removing or replacing profanity with a milder expression.",
+        "Ensure conflict is appropriate for the target audience and does not contain hate or violence."
+      ]
+    },
+    {
+      "scene_index": 63,
+      "scene_heading": "8-65. ИНТ. ЗРИТЕЛЬНЫЙ ЗАЛ / СЦЕНА / ЗА КУЛИСАМИ. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 22,
+      "text": "(злится) Ты издеваешься?",
+      "labels": [
+        "PROFANITY_OBSCENE",
+        "MILD_CONFLICT"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider removing or replacing profanity with a less offensive term.",
+        "Ensure the conflict is appropriate for the intended audience and context."
+      ]
+    },
+    {
+      "scene_index": 67,
+      "scene_heading": "8-69. НАТ. У ВХОДА В ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "Юля достаёт пистолет.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "No further action required. The content is within policy limits."
+      ]
+    },
+    {
+      "scene_index": 67,
+      "scene_heading": "8-69. НАТ. У ВХОДА В ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 8,
+      "text": "Юля стреляет.",
+      "labels": [
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Consider removing or significantly altering the depiction of the weapon use to reduce the severity of the content. If the scene is essential, provide a brief, non-graphic description of the action instead of showing the weapon in detail."
+      ]
+    },
+    {
+      "scene_index": 67,
+      "scene_heading": "8-69. НАТ. У ВХОДА В ДК. - ДЕНЬ",
+      "page": null,
+      "sentence_index": 10,
+      "text": "Пуля попадает в Никиту, его рубашка окрашивается красным.",
+      "labels": [
+        "VIOLENCE_GRAPHIC",
+        "WEAPONS_USAGE"
+      ],
+      "severity_local": "Mild",
+      "recommendations": [
+        "Avoid depicting blood or gore in detail; use subtle color changes instead",
+        "Show weapon usage without graphic detail; focus on action rather than weapon specifics"
+      ]
+    }
+  ],
+  "processing_seconds": 30,
+  "law_explanation": "The text contains numerous scenes of murder, graphic violence (e.g., a bullet striking a person), and weapons usage. According to Article 10 of the Russian law, content with graphic depiction of violence is prohibited for audiences under 18 and is only permissible for 16+ if it is non-naturalistic and does not show the killing or injury process. The violated sentences and labels_summary confirm the presence of explicit violent and criminal activity, which exceeds the limits for 16+. Therefore the most restrictive rating justified by the content is 18+."
+}
+

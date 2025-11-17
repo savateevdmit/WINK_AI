@@ -1,0 +1,23 @@
+<|channel|>analysis<|message|>We need to output JSON with key "non_neutral" and list of indices of scenes that likely contain any listed categories. We must be inclusive: if uncertain, include the index. So we should examine each scene for presence of any category.
+
+Categories list: VIOLENCE_GRAPHIC, VIOLENCE_NON_GRAPHIC, MURDER_HOMICIDE, SUICIDE_SELF_HARM, SEX_EXPLICIT, SEX_SUGGESTIVE, SEXUAL_VIOLENCE, NUDITY_EXPLICIT, NUDITY_NONSEXUAL, DRUGS_USE_DEPICTION, DRUGS_MENTION_NON_DETAILED, ALCOHOL_USE, TOBACCO_USE, CRIME_INSTRUCTIONS, CRIMINAL_ACTIVITY, WEAPONS_USAGE, WEAPONS_MENTION, PROFANITY_OBSCENE, ABUSE_HATE_EXTREMISM, HORROR_FEAR, DANGEROUS_IMITABLE_ACTS, MEDICAL_GORE_DETAILS, GAMBLING, MILD_CONFLICT, EXTREMISM_PROPAGANDA, NAZISM_PROPAGANDA, FASCISM_PROPAGANDA.
+
+We need to check each scene's sentences for any of these categories. Scenes 18-23.
+
+Scene 18: Sentences about Semenov lying under blanket, etc. No violence, no explicit content. There's mention of "Слизень" (slug?) but no violence. So likely neutral. But maybe "Слизень заползает в корабль." Not violence. So not included.
+
+Scene 19: Similar. No violence. So neutral.
+
+Scene 20: About writing article. No violence. Neutral.
+
+Scene 21: This scene has violent content: "он Олега с балкона одной рукой вышвырнул" (he threw Oleg from balcony with one hand). That's a violent act, possibly homicide? He threw him off balcony; could be death. Also mention of "перцового баллончика" (pepper spray). There's also mention of "вырубился от перцового баллончика?" That is violence. Also "вырубился" maybe died. So includes VIOLENCE_NON_GRAPHIC or GRAPHIC? It's a violent act but not graphic description. So category: VIOLENCE_NON_GRAPHIC, MURDER_HOMICIDE maybe. Also mention of "перцовый баллончик" (weapon). So WEAPONS_USAGE. Also "вырубился" could be death. So include scene 21.
+
+Also there is mention of "пошли", "убегает". No explicit sexual content. So just violence.
+
+Scene 22: Sentences: "Инфекционный ... смотрит на грудь АМ." There's mention of "смотрит на грудь" maybe sexual suggestive? He looks at chest. That could be sexual suggestive. Also "жует с набитым ртом". No explicit. So category: SEX_SUGGESTIVE. Also "пищу" no. No violence. So include scene 22.
+
+Scene 23: Sentences: "Слизень переливается разными цветами." No violence. There's mention of "женских формам" but not sexual content. It's about beauty. No explicit. So neutral.
+
+Scene 24: Sentences: "Вы хотите сказать, что природная, инстинктивная тяга к женским формам пробудила в вас сострадание?!" Also mention of "лучше смерть". No violence. So neutral.
+
+Thus indices to include: 21, 22. But we must be inclusive: if uncertain, include. For scene 18-20, no categories. Scene 23-24 also none. So final JSON: {"non_neutral":[21,22]}.<|end|><|start|>assistant<|channel|>final<|message|>{"non_neutral":[21,22]}

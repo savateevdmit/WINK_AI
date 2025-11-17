@@ -1,0 +1,59 @@
+{
+  "scene_results": [
+    {
+      "scID": 11,
+      "snt": [
+        {
+          "id": 0,
+          "vlc": [
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "vlc": []
+        },
+        {
+          "id": 2,
+          "vlc": []
+        },
+        {
+          "id": 3,
+          "vlc": []
+        },
+        {
+          "id": 4,
+          "vlc": []
+        },
+        {
+          "id": 5,
+          "vlc": []
+        },
+        {
+          "id": 6,
+          "vlc": []
+        },
+        {
+          "id": 7,
+          "vlc": [
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 90
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "vlc": []
+        },
+        {
+          "id": 9,
+          "vlc": []
+        }
+      ]
+    }
+  ]
+}

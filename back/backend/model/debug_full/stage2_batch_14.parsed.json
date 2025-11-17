@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 24,
+      "id": 13,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "No disallowed content detected.",
+          "adv": "",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

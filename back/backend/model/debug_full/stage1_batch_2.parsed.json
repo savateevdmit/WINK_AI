@@ -1,0 +1,27 @@
+{
+  "scene_results": [
+    {
+      "scID": 2,
+      "snt": [
+        {
+          "id": 2,
+          "vlc": [
+            {
+              "label": "WEAPONS_USAGE",
+              "conf": 80
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "vlc": [
+            {
+              "label": "VIOLENCE_NON_GRAPHIC",
+              "conf": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

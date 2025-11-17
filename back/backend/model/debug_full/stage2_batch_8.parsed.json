@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 8,
+      "id": 16,
+      "det": [
+        {
+          "label": "WEAPONS_USAGE",
+          "sev": "Moderate",
+          "scr": 55,
+          "rsn": "Oleg passes a weapon into the entrance, which is a moderate level of weapon usage.",
+          "adv": "Consider reducing weapon detail or providing context to avoid potential escalation.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

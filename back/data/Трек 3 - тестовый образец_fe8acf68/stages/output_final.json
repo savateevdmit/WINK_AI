@@ -1,0 +1,1470 @@
+{
+  "document": "input_stream_scenes.json",
+  "final_rating": "6+",
+  "scenes_total": 36,
+  "problem_fragments": [
+    {
+      "scene_index": 2,
+      "scene_heading": "3-3. инт. квартира кати. комната алёны / нат. дом кати. парковка. утро",
+      "page": null,
+      "sentence_index": 2,
+      "text": "Луч бьёт в заброшенную машину.",
+      "labels": [
+        "WEAPONS_USAGE"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Moderate",
+          "score": 55,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 2,
+      "scene_heading": "3-3. инт. квартира кати. комната алёны / нат. дом кати. парковка. утро",
+      "page": null,
+      "sentence_index": 3,
+      "text": "Машина испаряется.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Нарушение не содержит крови, жестокости или насилия.",
+          "advice": "Можно оставить без изменений.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Можно оставить без изменений."
+      ]
+    },
+    {
+      "scene_index": 3,
+      "scene_heading": "3-4. инт. БЕЛАЯ КОМНАТА. утро",
+      "page": null,
+      "sentence_index": 0,
+      "text": "Семёнов в шоке, смотрит на опустевшее парковочное место. семёнов Ну, может и не очень долгий, но бой...",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без проявления насилия.",
+          "advice": "Можно оставить без изменений.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Можно оставить без изменений."
+      ]
+    },
+    {
+      "scene_index": 5,
+      "scene_heading": "3-6. инт. квартира кати. ВАННАЯ КОМНАТА/коридор/Кухня. утро",
+      "page": null,
+      "sentence_index": 1,
+      "text": "Алёна спит в ванне с кухонным ножом в руке.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Наличие ножа в руке, но без действия и насилия.",
+          "advice": "Можно оставить без изменений.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Можно оставить без изменений."
+      ]
+    },
+    {
+      "scene_index": 5,
+      "scene_heading": "3-6. инт. квартира кати. ВАННАЯ КОМНАТА/коридор/Кухня. утро",
+      "page": null,
+      "sentence_index": 3,
+      "text": "Алёна, резко привстаёт, испуганно оглядывается.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без насилия, сцена не содержит кровавых или жестоких элементов.",
+          "advice": "Убедитесь, что в диалогах и действиях нет скрытого насилия или угроз.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что в диалогах и действиях нет скрытого насилия или угроз."
+      ]
+    },
+    {
+      "scene_index": 6,
+      "scene_heading": "3-7. ИНТ. квартира кати. комната алёны. утро",
+      "page": null,
+      "sentence_index": 1,
+      "text": "Спешно забирает гоу-про, выходит.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без насилия, сцена не содержит кровавых или жестоких элементов.",
+          "advice": "Убедитесь, что в диалогах и действиях нет скрытого насилия или угроз.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что в диалогах и действиях нет скрытого насилия или угроз."
+      ]
+    },
+    {
+      "scene_index": 7,
+      "scene_heading": "3-8. ИНТ. подъезд. утро",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Алёна нервно поглядывает на дверь, снова смотрит в телефон.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без насилия, сцена не содержит кровавых или жестоких элементов.",
+          "advice": "Убедитесь, что в диалогах и действиях нет скрытого насилия или угроз.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что в диалогах и действиях нет скрытого насилия или угроз."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "3-9. нат. дом КАТИ. парковка. утро",
+      "page": null,
+      "sentence_index": 5,
+      "text": "Олег достает из багажника биту.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "evidence_spans": {
+        "WEAPONS_MENTION": {
+          "severity": "Mild",
+          "score": 35,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "3-9. нат. дом КАТИ. парковка. утро",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Олег идёт к подъезду, Катя догоняет, преграждает путь. катя Олеж, подожди, ты же обещал, что пальцем его не тронешь! олег Так пальцем и не трону...",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "3-9. нат. дом КАТИ. парковка. утро",
+      "page": null,
+      "sentence_index": 16,
+      "text": "АМ - оценка на биту в руке Олега. олег Это подарок, сыну, на день рожденья.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "evidence_spans": {
+        "WEAPONS_MENTION": {
+          "severity": "Mild",
+          "score": 35,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "3-9. нат. дом КАТИ. парковка. утро",
+      "page": null,
+      "sentence_index": 19,
+      "text": "Ну, а то мало ли, взбрыкнёт... олег Этот что ли? катя Ну, знаешь...",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "В сцене присутствует конфликт между персонажами, но без насилия или угроз.",
+          "advice": "Никаких ограничений не требуется.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Никаких ограничений не требуется."
+      ]
+    },
+    {
+      "scene_index": 8,
+      "scene_heading": "3-9. нат. дом КАТИ. парковка. утро",
+      "page": null,
+      "sentence_index": 23,
+      "text": "Пусть на своё копьё бич пакеты жрёт.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "evidence_spans": {
+        "WEAPONS_MENTION": {
+          "severity": "Mild",
+          "score": 35,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 9,
+      "scene_heading": "3-10. инт. квартира кати. комната алёны. утро",
+      "page": null,
+      "sentence_index": 1,
+      "text": "Чтобы ты мне не помешал, когда я вылезу из твоего тела. семёнов (зк) Послушайте, но неужели нет способа предотвратить это чудовищное кровопролитие... иносемёнов Нет.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 10,
+      "scene_heading": "3-11. инт. дом кати. ЛЕСТНИЧНАЯ площадка. день",
+      "page": null,
+      "sentence_index": 12,
+      "text": "Катя, ещё раз недовольно окинув взглядом АМ, достаёт из сумочки ключи.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "None",
+          "score": 0,
+          "reason": "Незначительный конфликт без насилия",
+          "advice": "Можно оставить как есть",
+          "trigger": null
+        }
+      },
+      "severity_local": "None",
+      "recommendations": [
+        "Можно оставить как есть"
+      ]
+    },
+    {
+      "scene_index": 11,
+      "scene_heading": "3-12. инт. квартира кати. комната алёны. день",
+      "page": null,
+      "sentence_index": 0,
+      "text": "ИноСемёнов лежит на кровати, с ног по плечи обмотанный скотчем, рот заклеен скотчем.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Насилие без крови и графических деталей",
+          "advice": "Уменьшить детали, убрать скотч, если возможно",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Уменьшить детали, убрать скотч, если возможно"
+      ]
+    },
+    {
+      "scene_index": 11,
+      "scene_heading": "3-12. инт. квартира кати. комната алёны. день",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Семёнов активнее мычит, дёргается, трётся о плечо, пытаясь содрать скотч.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Насилие без крови и графических деталей",
+          "advice": "Уменьшить детали, убрать скотч, если возможно",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Уменьшить детали, убрать скотч, если возможно"
+      ]
+    },
+    {
+      "scene_index": 12,
+      "scene_heading": "3-13. инт. квартира кати. комната алёны / коридор. день",
+      "page": null,
+      "sentence_index": 10,
+      "text": "ИноСемёнов лежит под одеялом, укрытый до подбородка, скотча на лице нет. ам Здравствуйте, мне показалось или вы сказали «войдите»? иносемёнов (недружелюбно) Вам показалось.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без насилия.",
+          "advice": "Учитывайте, что конфликт может усиливаться; избегайте провокаций.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Учитывайте, что конфликт может усиливаться; избегайте провокаций."
+      ]
+    },
+    {
+      "scene_index": 13,
+      "scene_heading": "3-14. НАТ. КАФЕ. веранда. ДЕНЬ",
+      "page": null,
+      "sentence_index": 4,
+      "text": "Мне ещё в дьютике вискарь брать.",
+      "labels": [
+        "ALCOHOL_USE"
+      ],
+      "evidence_spans": {
+        "ALCOHOL_USE": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Упоминание алкоголя без описания злоупотребления.",
+          "advice": "Убедитесь, что употребление не поощряется.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что употребление не поощряется."
+      ]
+    },
+    {
+      "scene_index": 14,
+      "scene_heading": "3-15. инт. квартира кати. комната алёны. день",
+      "page": null,
+      "sentence_index": 2,
+      "text": "Я очень заразный, смертельно!",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 15,
+      "scene_heading": "3-16. инт. БЕЛАЯ КОМНАТА. день",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Почему ты её от меня скрывал?!",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без насилия.",
+          "advice": "Можно оставить, но убедитесь, что конфликт не усиливает напряжение.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Можно оставить, но убедитесь, что конфликт не усиливает напряжение."
+      ]
+    },
+    {
+      "scene_index": 16,
+      "scene_heading": "3-17. инт. машина олега / нат. дом кати. парковка. день",
+      "page": null,
+      "sentence_index": 12,
+      "text": "Катя передразнивает откровенный наряд АМ.",
+      "labels": [
+        "SEX_SUGGESTIVE"
+      ],
+      "evidence_spans": {
+        "SEX_SUGGESTIVE": {
+          "severity": "Moderate",
+          "score": 60,
+          "reason": "Содержит сексуальные намёки.",
+          "advice": "Уменьшите количество сексуальных намёков, чтобы снизить риск неприемлемого контента.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Уменьшите количество сексуальных намёков, чтобы снизить риск неприемлемого контента."
+      ]
+    },
+    {
+      "scene_index": 17,
+      "scene_heading": "3-18. инт. квартира кати. комната алёны. день",
+      "page": null,
+      "sentence_index": 10,
+      "text": "Так, Семёнов, ты чё, охренел?",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 21,
+      "scene_heading": "3-22. НАТ. дом кати. парковка. ДЕНЬ",
+      "page": null,
+      "sentence_index": 1,
+      "text": "Слушай, я понимаю, это всё звучит как бред, но когда он Олега с балкона одной рукой вышвырнул, я сама офигела...",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Наличие описания насилия без крови и без графических деталей.",
+          "advice": "Умеренное описание, можно оставить в сценарии.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Умеренное описание, можно оставить в сценарии."
+      ]
+    },
+    {
+      "scene_index": 21,
+      "scene_heading": "3-22. НАТ. дом кати. парковка. ДЕНЬ",
+      "page": null,
+      "sentence_index": 2,
+      "text": "АРТУР (с явным скепсисом) Ага, а потом он вырубился от перцового баллончика?",
+      "labels": [
+        "WEAPONS_USAGE",
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Mild",
+          "score": 55,
+          "reason": "Упоминание оружия (баллончик) без инструкций по применению.",
+          "advice": "Можно оставить, но уточнить контекст использования.",
+          "trigger": null
+        },
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Наличие описания насилия без крови и без графических деталей.",
+          "advice": "Умеренное описание, можно оставить в сценарии.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Можно оставить, но уточнить контекст использования.",
+        "Умеренное описание, можно оставить в сценарии."
+      ]
+    },
+    {
+      "scene_index": 22,
+      "scene_heading": "3-23. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 1,
+      "text": "ИноСемёнов ест пасту и, не моргая, смотрит на грудь АМ. ам",
+      "labels": [
+        "SEX_SUGGESTIVE"
+      ],
+      "evidence_spans": {
+        "SEX_SUGGESTIVE": {
+          "severity": "Moderate",
+          "score": 60,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 22,
+      "scene_heading": "3-23. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "ИноСемёнов продолжает не моргая смотреть на грудь АМ.",
+      "labels": [
+        "SEX_SUGGESTIVE"
+      ],
+      "evidence_spans": {
+        "SEX_SUGGESTIVE": {
+          "severity": "Moderate",
+          "score": 60,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 24,
+      "scene_heading": "3-25. инт. квартира кати. комната алёны / нат. дом кати. двор. день",
+      "page": null,
+      "sentence_index": 13,
+      "text": "Ладно, сейчас.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 25,
+      "scene_heading": "3-26. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "ам, иносемёнов, массовка: посетители, персонал ИноСемёнов пялится на грудь АМ, продолжая есть.",
+      "labels": [
+        "SEX_SUGGESTIVE"
+      ],
+      "evidence_spans": {
+        "SEX_SUGGESTIVE": {
+          "severity": "Moderate",
+          "score": 60,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 25,
+      "scene_heading": "3-26. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 6,
+      "text": "АМ ждёт продолжения, но ИноСемёнов молча пялится на грудь, поедая пасту. ам Ну а, может, у вас есть какая-то мечта? иносемёнов Прямо сейчас - спасти вселенную от гибели.",
+      "labels": [
+        "SEX_SUGGESTIVE"
+      ],
+      "evidence_spans": {
+        "SEX_SUGGESTIVE": {
+          "severity": "Moderate",
+          "score": 60,
+          "reason": "Содержит сексуально намёки",
+          "advice": "Уменьшить сексуальный подтекст",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Уменьшить сексуальный подтекст"
+      ]
+    },
+    {
+      "scene_index": 26,
+      "scene_heading": "3-27. НАТ. ДОМ кати. двор. ДЕНЬ",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Артур прыскает перцовым баллончиком Алёне в лицо.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Moderate",
+          "score": 55,
+          "reason": "Использование оружия",
+          "advice": "Уменьшить насилие",
+          "trigger": null
+        },
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Ненасильственное действие",
+          "advice": "Сократить сцену",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Уменьшить насилие",
+        "Сократить сцену"
+      ]
+    },
+    {
+      "scene_index": 26,
+      "scene_heading": "3-27. НАТ. ДОМ кати. двор. ДЕНЬ",
+      "page": null,
+      "sentence_index": 18,
+      "text": "Ты где вообще, чтоб хоть врезать тебе...",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Ненасильственное действие",
+          "advice": "Сократить сцену",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Сократить сцену"
+      ]
+    },
+    {
+      "scene_index": 26,
+      "scene_heading": "3-27. НАТ. ДОМ кати. двор. ДЕНЬ",
+      "page": null,
+      "sentence_index": 21,
+      "text": "Артур, скривившись, прыскает себе в лицо баллончиком.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Mild",
+          "score": 45,
+          "reason": "Упоминание баллончика как оружия, но без графического насилия.",
+          "advice": "Убедитесь, что сцена не содержит кровавых или жестоких деталей.",
+          "trigger": null
+        },
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 32,
+          "reason": "Сцена самопритыкания баллончиком, без крови и графики.",
+          "advice": "Избегайте описания травм или боли.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что сцена не содержит кровавых или жестоких деталей.",
+        "Избегайте описания травм или боли."
+      ]
+    },
+    {
+      "scene_index": 27,
+      "scene_heading": "3-28. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 0,
+      "text": "ам, семёнов, массовка: посетители, персонал ИноСемёнов захватывает вилкой приличную порцию пасты, запихивает всё в рот, жуёт.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт вокруг еды, без насилия.",
+          "advice": "Убедитесь, что конфликт не приводит к физическому насилию.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что конфликт не приводит к физическому насилию."
+      ]
+    },
+    {
+      "scene_index": 28,
+      "scene_heading": "3-29. НАТ. дом кати. двор. / инт. ресторан. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 9,
+      "text": "Уничтожь корабль, он хочет нас всех убить!",
+      "labels": [
+        "MURDER_HOMICIDE"
+      ],
+      "evidence_spans": {
+        "MURDER_HOMICIDE": {
+          "severity": "Severe",
+          "score": 85,
+          "reason": "Прямая инструкция уничтожить корабль и убить всех, что является призывом к массовому убийству.",
+          "advice": "Удалите инструкцию или замените на более безопасный контент.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Severe",
+      "recommendations": [
+        "Удалите инструкцию или замените на более безопасный контент."
+      ]
+    },
+    {
+      "scene_index": 29,
+      "scene_heading": "3-30. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 9,
+      "text": "Иносемёнов (испуганно) Корабль!",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт, без насилия.",
+          "advice": "Уточнить детали конфликта, если требуется.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Уточнить детали конфликта, если требуется."
+      ]
+    },
+    {
+      "scene_index": 29,
+      "scene_heading": "3-30. ИНТ. РЕСТОРАН. зал. ДЕНЬ",
+      "page": null,
+      "sentence_index": 12,
+      "text": "Допивает бокал вина.",
+      "labels": [
+        "ALCOHOL_USE"
+      ],
+      "evidence_spans": {
+        "ALCOHOL_USE": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 30,
+      "scene_heading": "3-31. нат. улица. день",
+      "page": null,
+      "sentence_index": 3,
+      "text": "ИноСемёнов пробегает по капотам машин, убегает дальше.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 31,
+      "scene_heading": "3-32. ИНТ. дом кати. лестничная клетка. день",
+      "page": null,
+      "sentence_index": 7,
+      "text": "По лестнице, на четвереньках, на ощупь поднимаются Алёна и Артур, с красными слезящимися глазами.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт, но без насилия.",
+          "advice": "Уменьшить напряженность, добавить диалог.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Уменьшить напряженность, добавить диалог."
+      ]
+    },
+    {
+      "scene_index": 32,
+      "scene_heading": "3-33. инт. квартира кати. кухня / прихожая. день",
+      "page": null,
+      "sentence_index": 5,
+      "text": "Олег быстро вынимает из-за тумбочки биту.",
+      "labels": [
+        "WEAPONS_MENTION"
+      ],
+      "evidence_spans": {
+        "WEAPONS_MENTION": {
+          "severity": "Mild",
+          "score": 35,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 32,
+      "scene_heading": "3-33. инт. квартира кати. кухня / прихожая. день",
+      "page": null,
+      "sentence_index": 21,
+      "text": "Олег принимает мужественный вид, выходит с битой в прихожую.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Moderate",
+          "score": 55,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        },
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 32,
+      "scene_heading": "3-33. инт. квартира кати. кухня / прихожая. день",
+      "page": null,
+      "sentence_index": 27,
+      "text": "Олег замахивается битой на ИноСемёнова.",
+      "labels": [
+        "WEAPONS_USAGE",
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Moderate",
+          "score": 55,
+          "reason": "Использование оружия (бита) в сцене, но без графического насилия.",
+          "advice": "Убедитесь, что сцена не содержит чрезмерного насилия и не пропагандирует его.",
+          "trigger": null
+        },
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Наличие некровавого насилия (отталкивание).",
+          "advice": "Сцена допустима, но избегайте излишней агрессии.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Убедитесь, что сцена не содержит чрезмерного насилия и не пропагандирует его.",
+        "Сцена допустима, но избегайте излишней агрессии."
+      ]
+    },
+    {
+      "scene_index": 32,
+      "scene_heading": "3-33. инт. квартира кати. кухня / прихожая. день",
+      "page": null,
+      "sentence_index": 28,
+      "text": "Тот отталкивает Олега в сторону, Олег отлетает обратно в кухню.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Наличие некровавого насилия (отталкивание).",
+          "advice": "Сцена допустима, но избегайте излишней агрессии.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Сцена допустима, но избегайте излишней агрессии."
+      ]
+    },
+    {
+      "scene_index": 33,
+      "scene_heading": "3-34. инт. квартира кати. комната алёны / нат. дом кати. парковка. день",
+      "page": null,
+      "sentence_index": 0,
+      "text": "ИноСемёнов обозлённо смотрит на пустой стол, яростно рычит, выглядывает в распахнутое окно, осматривается, внизу никого.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Мягкий конфликт без насилия.",
+          "advice": "Можно оставить, но убедитесь, что не переходите к более жестоким действиям.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Можно оставить, но убедитесь, что не переходите к более жестоким действиям."
+      ]
+    },
+    {
+      "scene_index": 33,
+      "scene_heading": "3-34. инт. квартира кати. комната алёны / нат. дом кати. парковка. день",
+      "page": null,
+      "sentence_index": 1,
+      "text": "ИноСемёнов злится, крушит мебель.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Нарисована агрессия без физического насилия.",
+          "advice": "Никаких изменений не требуется.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Никаких изменений не требуется."
+      ]
+    },
+    {
+      "scene_index": 33,
+      "scene_heading": "3-34. инт. квартира кати. комната алёны / нат. дом кати. парковка. день",
+      "page": null,
+      "sentence_index": 2,
+      "text": "Входит Олег с битой. олег Слышь, я смотрю, ты по-хорошему вообще не понимаешь.",
+      "labels": [
+        "WEAPONS_USAGE"
+      ],
+      "evidence_spans": {
+        "WEAPONS_USAGE": {
+          "severity": "Moderate",
+          "score": 55,
+          "reason": "Появление оружия (бита) в сцене.",
+          "advice": "Убедитесь, что сцена не содержит инструкций по применению оружия.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Moderate",
+      "recommendations": [
+        "Убедитесь, что сцена не содержит инструкций по применению оружия."
+      ]
+    },
+    {
+      "scene_index": 33,
+      "scene_heading": "3-34. инт. квартира кати. комната алёны / нат. дом кати. парковка. день",
+      "page": null,
+      "sentence_index": 4,
+      "text": "ИноСемёнов бешеным взглядом смотрит на Олега.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Небольшой конфликт без насилия.",
+          "advice": "Никаких изменений не требуется.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Никаких изменений не требуется."
+      ]
+    },
+    {
+      "scene_index": 34,
+      "scene_heading": "3-35. нат. дом кати. парковка. вечер",
+      "page": null,
+      "sentence_index": 1,
+      "text": "Рядом с деревом падает Олег.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Незначительное насилие без крови и жестокости.",
+          "advice": "Убедитесь, что сцена не содержит кровавых деталей и не усиливает конфликт.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Убедитесь, что сцена не содержит кровавых деталей и не усиливает конфликт."
+      ]
+    },
+    {
+      "scene_index": 34,
+      "scene_heading": "3-35. нат. дом кати. парковка. вечер",
+      "page": null,
+      "sentence_index": 7,
+      "text": "Олег стонет, взявшись за руку.",
+      "labels": [
+        "VIOLENCE_NON_GRAPHIC"
+      ],
+      "evidence_spans": {
+        "VIOLENCE_NON_GRAPHIC": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 35,
+      "scene_heading": "3-36. инт. квартира кати. комната алёны. вечер",
+      "page": null,
+      "sentence_index": 0,
+      "text": "ИНОСЕМЁНОВ, алёна (зк) ИноСемёнов не моргая, зло смотрит в одну точку.",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 25,
+          "reason": "Авто: базовая оценка.",
+          "advice": "Редактура: смягчить при необходимости.",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "Редактура: смягчить при необходимости."
+      ]
+    },
+    {
+      "scene_index": 1,
+      "scene_heading": "3-2. инт. БЕЛАЯ КОМНАТА. утро",
+      "page": 2,
+      "sentence_index": 4,
+      "text": "Человечество умрет в страшных муках",
+      "labels": [
+        "MILD_CONFLICT"
+      ],
+      "evidence_spans": {
+        "MILD_CONFLICT": {
+          "severity": "Mild",
+          "score": 40,
+          "reason": "No explicit violence or profanity; mild conflict language only.",
+          "advice": "None needed",
+          "trigger": null
+        }
+      },
+      "severity_local": "Mild",
+      "recommendations": [
+        "None needed"
+      ],
+      "fragment_severity": "Mild"
+    }
+  ],
+  "model_final_rating": null,
+  "model_explanation": null,
+  "processing_seconds": 7.2,
+  "parents_guide": {
+    "Violence_Gore": {
+      "severity": "Mild",
+      "episodes": 16,
+      "scenes_with_issues_percent": 25.0,
+      "examples": [
+        {
+          "scene_index": 2,
+          "page": null,
+          "text": "Машина испаряется.",
+          "labels": [
+            "VIOLENCE_NON_GRAPHIC"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 5,
+          "page": null,
+          "text": "Алёна спит в ванне с кухонным ножом в руке.",
+          "labels": [
+            "VIOLENCE_NON_GRAPHIC"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 11,
+          "page": null,
+          "text": "ИноСемёнов лежит на кровати, с ног по плечи обмотанный скотчем, рот заклеен скотчем.",
+          "labels": [
+            "VIOLENCE_NON_GRAPHIC"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 11,
+          "page": null,
+          "text": "Семёнов активнее мычит, дёргается, трётся о плечо, пытаясь содрать скотч.",
+          "labels": [
+            "VIOLENCE_NON_GRAPHIC"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 21,
+          "page": null,
+          "text": "Слушай, я понимаю, это всё звучит как бред, но когда он Олега с балкона одной рукой вышвырнул, я сама офигела...",
+          "labels": [
+            "VIOLENCE_NON_GRAPHIC"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Sex_Nudity": {
+      "severity": "Moderate",
+      "episodes": 5,
+      "scenes_with_issues_percent": 8.3,
+      "examples": [
+        {
+          "scene_index": 16,
+          "page": null,
+          "text": "Катя передразнивает откровенный наряд АМ.",
+          "labels": [
+            "SEX_SUGGESTIVE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 22,
+          "page": null,
+          "text": "ИноСемёнов ест пасту и, не моргая, смотрит на грудь АМ. ам",
+          "labels": [
+            "SEX_SUGGESTIVE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 22,
+          "page": null,
+          "text": "ИноСемёнов продолжает не моргая смотреть на грудь АМ.",
+          "labels": [
+            "SEX_SUGGESTIVE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 25,
+          "page": null,
+          "text": "ам, иносемёнов, массовка: посетители, персонал ИноСемёнов пялится на грудь АМ, продолжая есть.",
+          "labels": [
+            "SEX_SUGGESTIVE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 25,
+          "page": null,
+          "text": "АМ ждёт продолжения, но ИноСемёнов молча пялится на грудь, поедая пасту. ам Ну а, может, у вас есть какая-то мечта? иносемёнов Прямо сейчас - спасти вселенную от гибели.",
+          "labels": [
+            "SEX_SUGGESTIVE"
+          ],
+          "severity_local": "Moderate"
+        }
+      ]
+    },
+    "Alcohol_Drugs_Smoking": {
+      "severity": "Mild",
+      "episodes": 2,
+      "scenes_with_issues_percent": 5.6,
+      "examples": [
+        {
+          "scene_index": 13,
+          "page": null,
+          "text": "Мне ещё в дьютике вискарь брать.",
+          "labels": [
+            "ALCOHOL_USE"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 29,
+          "page": null,
+          "text": "Допивает бокал вина.",
+          "labels": [
+            "ALCOHOL_USE"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Profanity": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Crime": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Weapons": {
+      "severity": "Moderate",
+      "episodes": 11,
+      "scenes_with_issues_percent": 16.7,
+      "examples": [
+        {
+          "scene_index": 2,
+          "page": null,
+          "text": "Луч бьёт в заброшенную машину.",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Moderate"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Олег достает из багажника биту.",
+          "labels": [
+            "WEAPONS_MENTION"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "АМ - оценка на биту в руке Олега. олег Это подарок, сыну, на день рожденья.",
+          "labels": [
+            "WEAPONS_MENTION"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Пусть на своё копьё бич пакеты жрёт.",
+          "labels": [
+            "WEAPONS_MENTION"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 21,
+          "page": null,
+          "text": "АРТУР (с явным скепсисом) Ага, а потом он вырубился от перцового баллончика?",
+          "labels": [
+            "WEAPONS_USAGE"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Frightening_Intense": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Gambling": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    },
+    "Other": {
+      "severity": "Mild",
+      "episodes": 21,
+      "scenes_with_issues_percent": 52.8,
+      "examples": [
+        {
+          "scene_index": 3,
+          "page": null,
+          "text": "Семёнов в шоке, смотрит на опустевшее парковочное место. семёнов Ну, может и не очень долгий, но бой...",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 5,
+          "page": null,
+          "text": "Алёна, резко привстаёт, испуганно оглядывается.",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 6,
+          "page": null,
+          "text": "Спешно забирает гоу-про, выходит.",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 7,
+          "page": null,
+          "text": "Алёна нервно поглядывает на дверь, снова смотрит в телефон.",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        },
+        {
+          "scene_index": 8,
+          "page": null,
+          "text": "Олег идёт к подъезду, Катя догоняет, преграждает путь. катя Олеж, подожди, ты же обещал, что пальцем его не тронешь! олег Так пальцем и не трону...",
+          "labels": [
+            "MILD_CONFLICT"
+          ],
+          "severity_local": "Mild"
+        }
+      ]
+    },
+    "Extremism_Propaganda": {
+      "severity": "None",
+      "episodes": 0,
+      "scenes_with_issues_percent": 0.0,
+      "examples": []
+    }
+  }
+}

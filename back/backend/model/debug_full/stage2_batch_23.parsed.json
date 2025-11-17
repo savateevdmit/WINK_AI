@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 30,
+      "id": 3,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Contains mild conflict involving cars",
+          "adv": "None",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

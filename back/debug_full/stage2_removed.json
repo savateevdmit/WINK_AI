@@ -1,0 +1,12 @@
+[
+  {
+    "scene_index": 2,
+    "sentence_index": 6,
+    "removed_label": "VIOLENCE_GRAPHIC"
+  },
+  {
+    "scene_index": 2,
+    "sentence_index": 14,
+    "removed_label": "VIOLENCE_GRAPHIC"
+  }
+]

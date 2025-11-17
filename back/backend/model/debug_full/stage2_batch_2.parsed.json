@@ -1,0 +1,28 @@
+{
+  "ans": [
+    {
+      "scID": 1,
+      "id": 2,
+      "det": [
+        {
+          "label": "VIOLENCE_GRAPHIC",
+          "sev": "Severe",
+          "scr": 90,
+          "rsn": "Graphic depiction of gore, blood, and dismemberment.",
+          "adv": "Consider removing or significantly reducing graphic details to comply with policy.",
+          "ok": false,
+          "suggest": "VIOLENCE_GRAPHIC_MITIGATE"
+        },
+        {
+          "label": "MURDER_HOMICIDE",
+          "sev": "Severe",
+          "scr": 70,
+          "rsn": "Explicit depiction of a murder act with gore.",
+          "adv": "Consider removing or altering the scene to avoid explicit instructions or portrayal of homicide.",
+          "ok": false,
+          "suggest": "MURDER_HOMICIDE_REMOVE"
+        }
+      ]
+    }
+  ]
+}

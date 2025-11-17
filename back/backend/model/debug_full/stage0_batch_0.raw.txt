@@ -1,0 +1,23 @@
+<|channel|>analysis<|message|>We need to identify scenes that likely contain any listed categories. We must output JSON with key "non_neutral" and list of indices of scenes that likely contain ANY listed categories. We should be inclusive: if uncertain, include the index.
+
+We have 6 scenes (indices 0-5). Let's analyze each for categories:
+
+Categories list: VIOLENCE_GRAPHIC, VIOLENCE_NON_GRAPHIC, MURDER_HOMICIDE, SUICIDE_SELF_HARM, SEX_EXPLICIT, SEX_SUGGESTIVE, SEXUAL_VIOLENCE, NUDITY_EXPLICIT, NUDITY_NONSEXUAL, DRUGS_USE_DEPICTION, DRUGS_MENTION_NON_DETAILED, ALCOHOL_USE, TOBACCO_USE, CRIME_INSTRUCTIONS, CRIMINAL_ACTIVITY, WEAPONS_USAGE, WEAPONS_MENTION, PROFANITY_OBSCENE, ABUSE_HATE_EXTREMISM, HORROR_FEAR, DANGEROUS_IMITABLE_ACTS, MEDICAL_GORE_DETAILS, GAMBLING, MILD_CONFLICT, EXTREMISM_PROPAGANDA, NAZISM_PROPAGANDA, FASCISM_PROPAGANDA.
+
+We need to see if any scene contains any of these categories. Let's examine each scene:
+
+Scene 0: Sentences mention "Инфемёнов за столом, перед ним корабль." Then "Из носа торчат щупальца, при помощи ножниц, заколки, шпильки и пинцета ковыряются в корабле." So there are scissors, hairpins, pins, tweezers. That is weapons usage? Possibly WEAPONS_USAGE (scissors). Also "Корабль искрит, «оживает», переливается огнями." Then "Щупальца втягиваются в нос, Инфемёнов зловеще улыбается." Then "Можете считать часы до своей смерти." That suggests threat. There's no explicit violence but maybe mild conflict? There's mention of death. But no actual violence. However, the presence of scissors and other tools could be considered WEAPONS_USAGE. Also "счита... до своей смерти" might be threat. So include index 0.
+
+Scene 1: Sentences: "Слизень злорадно улыбается." "Семёнов гордо расправляет плечи. семёнов А знаете, что?" "Давайте, прилетайте." "Мы вам не какие-то там неандертальцы!" "Человечество даст бой!" This seems like mild conflict? Possibly MILD_CONFLICT. There's no violence or weapons. But maybe threat? It's just a statement. Might be mild conflict. We should include if uncertain. The categories include MILD_CONFLICT. So include index 1.
+
+Scene 2: Sentences: "Инфемёнов подносит корабль к окну, нажимает кнопку." "Корабль испускает зелёный луч." "Луч бьёт в заброшенную машину." "Машина испаряется." This is a sci-fi action. No violence. No weapons? The ship uses a green beam. Could be WEAPONS_USAGE? It's a weapon but not a physical weapon. But maybe it's a weapon usage. But the categories include WEAPONS_USAGE for any weapon. So yes, we might include. But uncertain. I'd include index 2.
+
+Scene 3: Sentences: "Семёнов в шоке, смотрит на опустевшее парковочное место. семёнов Ну, может и не очень долгий, но бой..." "Слизень самодовольно ухмыляется." This is mild conflict. So include index 3.
+
+Scene 4: Sentences: "Возврат в сцену 3-3.", "Инфемёнов Осталось только подкрепиться перед долгой дорогой." No violence. But maybe mild conflict? Not really. But we might include if uncertain. But it's just a line about refueling. I'd not include index 4.
+
+Scene 5: Sentences: "алёна, иносемёнов Ванная.", "Алёна спит в ванне с кухонным ножом в руке." So there's a kitchen knife in hand. That is WEAPONS_USAGE. Also "Алёна спит..." "Просыпается от шума на кухне." "Алёна резко привстаёт, испуганно оглядывается." "Вокруг никого." "Алёна облегчённо выдыхает." "Коридор." "Алёна с опаской выходит из ванной." "На кухне Инфемёнов жадно грызёт качан свежей капусты, поливая майонезом." "Алёна натягивает улыбку." "Доброе утро, пап..." "Инфемёнов Очень доброе." "Правда, не для всех." "Алёна ещё раз натужно улыбается." "Алёна незаметно юркает в свою комнату." There's a kitchen knife. That is WEAPONS_USAGE. Also maybe threat? Not explicit. So include index 5.
+
+Thus indices likely containing categories: 0,1,2,3,5. Possibly 4? But we can be inclusive. The instruction says "Be INCLUSIVE: if uncertain, include the index." For scene 4, it's uncertain but no category. But maybe mild conflict? It's just a line about refueling. I'd not include. But to be safe, we could include all except 4. Let's output indices [0,1,2,3,5].
+
+Return JSON: {"non_neutral":[0,1,2,3,5]}.<|end|><|start|>assistant<|channel|>final<|message|>{"non_neutral":[0,1,2,3,5]}

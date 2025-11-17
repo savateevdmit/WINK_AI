@@ -1,0 +1,23 @@
+<|channel|>analysis<|message|>We need to output JSON with key "non_neutral" and list of indices of scenes that likely contain any listed categories. We must be inclusive: if uncertain, include the index. So we should examine each scene for presence of any category.
+
+Categories list: VIOLENCE_GRAPHIC, VIOLENCE_NON_GRAPHIC, MURDER_HOMICIDE, SUICIDE_SELF_HARM, SEX_EXPLICIT, SEX_SUGGESTIVE, SEXUAL_VIOLENCE, NUDITY_EXPLICIT, NUDITY_NONSEXUAL, DRUGS_USE_DEPICTION, DRUGS_MENTION_NON_DETAILED, ALCOHOL_USE, TOBACCO_USE, CRIME_INSTRUCTIONS, CRIMINAL_ACTIVITY, WEAPONS_USAGE, WEAPONS_MENTION, PROFANITY_OBSCENE, ABUSE_HATE_EXTREMISM, HORROR_FEAR, DANGEROUS_IMITABLE_ACTS, MEDICAL_GORE_DETAILS, GAMBLING, MILD_CONFLICT, EXTREMISM_PROPAGANDA, NAZISM_PROPAGANDA, FASCISM_PROPAGANDA.
+
+We need to check each scene sentences for any of these categories. Scenes 36-41.
+
+Scene 36: "Маша выходит во двор школы... Костя караулит..." No violence, no crime. So likely neutral. No category.
+
+Scene 37: Director office. No violence. No crime. So neutral.
+
+Scene 38: Car ride, music, DPKS stops, etc. No violence. No drugs. So neutral.
+
+Scene 39: Masha walking, Kosta attacks? Let's read: "В какой-то подворотне, где никого нет Костя находит удачное время и место для атаки." Attack implies violence. But no explicit description of violence. It's a threat. There's mention of "падает, сбивает коленку в кровь" - she falls and cuts knee in blood. That is injury but not graphic? It's a cut. Could be considered violence non-graphic? The category VIOLENCE_NON_GRAPHIC includes non-graphic violence. So scene 39 likely contains violence non-graphic. Also maybe mild conflict? There's an attack. So include index 39.
+
+Scene 40: Interaction with mother, no violence. No crime. So neutral.
+
+Scene 41: Masha is attacked by a man? Let's read: "Маша не видит, на кого налетела, она в ужасе... Мужчиной оказывается Володя." Wait earlier scene 39 had Kosta attack. Scene 41: Masha is attacked by a man? Actually "Маша не видит, на кого налетела, она в ужасе, пытается встать, чтобы бежать дальше, тяжело дышит. Мужчиной оказывается Володя." So she was attacked by someone but turned out to be Volodya who helps her. There's mention of Kosta with a rope trap. "Костя убирает натянутую верёвку - это была его ловушка." So there's a rope trap, but no violence inflicted? There's mention of rope trap. But earlier scene 39 had attack. Scene 41 includes rope trap. That is a threat. Also mention of "Володя достает из кармана сложенный листок бумаги." No violence. So scene 41 likely contains mild conflict or non-graphic violence? The rope trap could be considered a threat but no actual harm. But we might include it as violence non-graphic. So include index 41.
+
+Also check for other categories: any mention of drugs, alcohol? None. Profanity? None. Sexual? No. Weapons? Rope is not a weapon. But rope used as trap. Not weapons usage. So only violence categories.
+
+Thus indices: 39 and 41. Also maybe 36? No. 37? No. 38? No. 40? No.
+
+Thus output JSON: {"non_neutral":[39,41]}.<|end|><|start|>assistant<|channel|>final<|message|>{"non_neutral":[39,41]}

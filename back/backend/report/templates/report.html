@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Отчёт по оценке сценария — {{ document }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    :root{
+      --fg:#0f172a;         /* slate-900 */
+      --muted:#64748b;      /* slate-500 */
+      --border:#e2e8f0;     /* slate-200 */
+      --bg:#ffffff;
+      --card:#ffffff;
+      --accent:#111827;
+      --chip:#eef2ff;
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --bad:#ef4444;
+      --none:#94a3b8;
+      --radius:12px;
+      --gap:16px;
+      --chart-h:260px;
+      --container-px:16px;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);}
+    body{font:14px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,"Noto Sans",sans-serif;}
+
+    .container{
+      width:100%;
+      max-width:none; /* растягивается на ширину экрана */
+      margin:0 auto 48px;
+      padding:0 var(--container-px);
+      box-sizing:border-box;
+    }
+
+    .header{
+      display:grid;
+      grid-template-columns: 1fr auto;
+      gap:var(--gap);
+      align-items:start;
+      margin:18px 0 var(--gap);
+    }
+    .title{
+      font-size: clamp(18px, 2.4vw, 28px);
+      font-weight:700;
+      margin:0 0 4px 0;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:12px;
+      margin-top:2px;
+    }
+    .stat{
+      border:1px solid var(--border);
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:12px 14px;
+      min-width:150px;
+      text-align:right;
+    }
+    .stat .label{color:var(--muted); font-size:12px;}
+    .stat .value{font-size: clamp(20px, 3vw, 32px); font-weight:800;}
+
+    .section{ margin-bottom: var(--gap); }
+    .grid-auto{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap:var(--gap);
+      align-items:stretch;
+    }
+    .card{
+      border:1px solid var(--border);
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:12px 14px;
+      box-sizing:border-box;
+      min-height:0;
+    }
+    .card h3{
+      margin:0 0 8px 0;
+      font-size:14px;
+      font-weight:700;
+      color:var(--accent);
+    }
+
+    .chart-wrap{ width:100%; height:var(--chart-h); display:block; }
+    .chart-wrap > canvas{ width:100% !important; height:100% !important; }
+
+    .chips .chip{
+      display:inline-block; background:var(--chip); border-radius:999px;
+      padding:2px 8px; font-size:11px; margin:2px 4px 0 0;
+    }
+    .sev-None{ color:var(--none); }
+    .sev-Mild{ color:var(--ok); }
+    .sev-Moderate{ color:var(--warn); }
+    .sev-Severe{ color:var(--bad); }
+
+    table{width:100%; border-collapse:collapse;}
+    th,td{padding:8px 10px; border-bottom:1px solid var(--border); font-size:12px; text-align:left; vertical-align:top;}
+    th{background:#f8fafc; position:sticky; top:0; z-index:1;}
+    .scroll{
+      overflow:auto;
+      max-height: 520px;
+      border:1px solid var(--border);
+      border-radius:10px;
+    }
+
+    .key-scene{
+      padding:8px 10px; border:1px solid var(--border); border-radius:8px; margin-bottom:8px;
+    }
+    .key-scene .meta{ color:var(--muted); font-size:12px; margin:2px 0 6px; }
+    .key-scene .txt{ margin:4px 0; }
+    .key-scene .chips{ margin-top:4px; }
+
+    /* Небольшие тюнинги для больших экранов/масштабов */
+    @media (min-width: 1600px){
+      :root{ --chart-h:300px; --container-px:24px; }
+    }
+    @media (min-width: 2200px){
+      :root{ --chart-h:340px; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <div class="title">Отчёт по оценке сценария</div>
+        <div class="sub">
+          Документ: {{ document }}<br/>
+          Сгенерирован: {{ generated_at }}<br/>
+          Всего сцен: {{ scenes_total }} · Всего эпизодов с нарушениями: {{ total_fragments }}
+        </div>
+      </div>
+      <div class="stat">
+        <div class="label">Итоговый рейтинг</div>
+        <div class="value">{{ final_rating }}</div>
+        {% if model_final_rating %}
+          <div class="sub">Рейтинг модели: {{ model_final_rating }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Section 1: три графика в одной строке (без хронологии) -->
+    <section class="section">
+      <div class="grid-auto">
+        <div class="card">
+          <h3>По категориям (Parents Guide)</h3>
+          <div class="chart-wrap"><canvas id="bar_by_group"></canvas></div>
+        </div>
+
+        <div class="card">
+          <h3>Распределение по тяжести эпизодов</h3>
+          <div class="chart-wrap"><canvas id="pie_severity"></canvas></div>
+        </div>
+
+        <div class="card">
+          <h3>Топ‑10 меток (график)</h3>
+          <div class="chart-wrap"><canvas id="bar_top_labels"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Parents (таблица) + Частые нарушения -->
+    <section class="section">
+      <div class="grid-auto">
+        <div class="card">
+          <h3>Parents guide (таблица)</h3>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr><th>Группа</th><th>Тяжесть</th><th>Эпизоды</th><th>Сцен с проблемами</th></tr>
+              </thead>
+              <tbody>
+                {% for row in parents_table %}
+                <tr>
+                  <td>{{ row.group }}</td>
+                  <td class="sev-{{ row.severity }}">{{ row.severity }}</td>
+                  <td>{{ row.episodes }}</td>
+                  <td>{{ "%.1f"|format(row.scenes_percent) }}%</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Часто встречающиеся нарушения</h3>
+          {% if top_labels %}
+            <ul style="margin:0; padding-left:16px;">
+              {% for item in top_labels %}
+                <li><strong>{{ item.label }}</strong> — {{ item.count }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <div class="sub">Нарушения не обнаружены.</div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Сцены-лидеры + Ключевые сцены -->
+    <section class="section">
+      <div class="grid-auto">
+        <div class="card">
+          <h3>Сцены с наибольшим числом эпизодов</h3>
+          <div class="scroll">
+            <table>
+              <thead>
+              <tr>
+                <th style="width:18%;">Сцена</th>
+                <th>Заголовок</th>
+                <th style="width:10%;">Эпизодов</th>
+                <th style="width:14%;">Макс. тяжесть</th>
+                <th style="width:40%;">Метки (top)</th>
+              </tr>
+              </thead>
+              <tbody id="scenesTopBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Ключевые сцены</h3>
+          {% if key_scenes %}
+            {% for ks in key_scenes %}
+              <div class="key-scene">
+                <div><strong>Сцена {{ ks.scene_index }}</strong>{% if ks.heading %} — {{ ks.heading }}{% endif %}</div>
+                <div class="meta">Реплика #{{ ks.sentence_index }} · <span class="sev-{{ ks.fragment_severity }}">{{ ks.fragment_severity }}</span></div>
+                <div class="txt">{{ ks.text }}</div>
+                {% if ks.labels and ks.labels|length>0 %}
+                  <div class="chips">
+                    {% for l in ks.labels %}
+                      <span class="chip">{{ l }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                {% if ks.reason %}<div class="meta">Комментарий: {{ ks.reason }}</div>{% endif %}
+                {% if ks.advice %}<div class="meta">Совет: {{ ks.advice }}</div>{% endif %}
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="sub">Ключевые сцены не выделены.</div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Полный список эпизодов — отдельным блоком на всю ширину -->
+    <section class="section">
+      <div class="card">
+        <h3>Подробный список эпизодов с нарушениями</h3>
+        {% if flat_violations %}
+          <div class="scroll" style="max-height: 640px;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:10%;">Сцена</th>
+                  <th style="width:6%;">Стр.</th>
+                  <th>Реплика</th>
+                  <th style="width:14%;">Метка</th>
+                  <th style="width:10%;">Тяжесть</th>
+                  <th>Причина</th>
+                  <th>Совет</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for v in flat_violations %}
+                <tr>
+                  <td>{{ v.scene_index }}{% if v.heading %}<div class="sub">{{ v.heading }}</div>{% endif %}</td>
+                  <td>{{ v.page or "" }}</td>
+                  <td><div class="sub">#{{ v.sentence_index }}</div><div>{{ v.text }}</div></td>
+                  <td><span class="chip">{{ v.label }}</span></td>
+                  <td class="sev-{{ v.severity }}">{{ v.severity }}</td>
+                  <td>{{ v.reason }}</td>
+                  <td>{{ v.advice }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}
+          <div class="sub">Нарушений не обнаружено.</div>
+        {% endif %}
+      </div>
+    </section>
+
+    <div class="sub" style="margin-top:8px;">
+      Отчёт помогает быстро оценить риски и наметить правки в сценарии.
+    </div>
+  </div>
+
+  <script>
+    // Данные из сервера
+    const parentsTable   = {{ parents_table|tojson }};
+    const severityCounts = {{ severity_counts|tojson }};
+    const topLabels      = {{ top_labels|tojson }};
+    const flatViolations = {{ flat_violations|tojson }};
+    const parsedScenes   = {{ parsed_scenes|tojson }};
+
+    function readyCharts(){
+      try{
+        // Parents bar
+        new Chart(document.getElementById('bar_by_group'), {
+          type: 'bar',
+          data: {
+            labels: parentsTable.map(r => r.group),
+            datasets: [{ data: parentsTable.map(r => r.episodes), backgroundColor: '#60a5fa' }]
+          },
+          options: {
+            responsive:true, maintainAspectRatio:false,
+            plugins:{ legend:{display:false} },
+            scales:{ y:{ beginAtZero:true } }
+          }
+        });
+
+        // Severity doughnut
+        new Chart(document.getElementById('pie_severity'), {
+          type: 'doughnut',
+          data: {
+            labels: severityCounts.map(x => x.level),
+            datasets: [{ data: severityCounts.map(x => x.count),
+              backgroundColor: ['#e5e7eb','#22c55e','#fbbf24','#ef4444'] }]
+          },
+          options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom' } } }
+        });
+
+        // Top labels bar
+        new Chart(document.getElementById('bar_top_labels'), {
+          type: 'bar',
+          data: {
+            labels: topLabels.map(x => x.label),
+            datasets: [{ data: topLabels.map(x => x.count), backgroundColor:'#86efac' }]
+          },
+          options:{
+            responsive:true, maintainAspectRatio:false,
+            plugins:{ legend:{display:false} },
+            scales:{
+              x:{ ticks:{ autoSkip:false, maxRotation:40, minRotation:0 } },
+              y:{ beginAtZero:true }
+            }
+          }
+        });
+
+        // Сцены‑лидеры — таблица
+        const byScene = new Map();
+        for(const v of flatViolations){
+          const sid = v.scene_index ?? -1;
+          if(!byScene.has(sid)){
+            byScene.set(sid, {count:0, labels:{}, maxSev:'None', heading:v.heading||''});
+          }
+          const rec = byScene.get(sid);
+          rec.count += 1;
+          const sev = (v.severity||'None');
+          const rank = {None:0,Mild:1,Moderate:2,Severe:3}[sev]||0;
+          const maxRank = {None:0,Mild:1,Moderate:2,Severe:3}[rec.maxSev]||0;
+          if(rank>maxRank) rec.maxSev = sev;
+          const lab = v.label||'';
+          if(lab) rec.labels[lab] = (rec.labels[lab]||0)+1;
+          if(!rec.heading && v.heading) rec.heading = v.heading;
+        }
+        for(const sc of (parsedScenes||[])){
+          const sid = sc.scene_index;
+          if(byScene.has(sid)){
+            const rec = byScene.get(sid);
+            if(!rec.heading && sc.heading) rec.heading = sc.heading;
+          }
+        }
+
+        const rows = Array.from(byScene.entries())
+          .map(([sid,rec])=>{
+            const topLabs = Object.entries(rec.labels).sort((a,b)=>b[1]-a[1]).slice(0,4).map(x=>x[0]);
+            return {scene:sid, heading: (rec.heading||''), count:rec.count, maxSev:rec.maxSev, labels:topLabs};
+          })
+          .sort((a,b)=>b.count - a.count)
+          .slice(0, 14);
+
+        const body = document.getElementById('scenesTopBody');
+        if(body){
+          body.innerHTML = rows.map(r=>`
+            <tr>
+              <td>${r.scene}</td>
+              <td>${r.heading||''}</td>
+              <td>${r.count}</td>
+              <td class="sev-${r.maxSev}">${r.maxSev}</td>
+              <td>${r.labels.map(l=>`<span class="chip">${l}</span>`).join(' ')}</td>
+            </tr>
+          `).join('');
+        }
+
+        // Сообщаем генератору PDF (если нужен), что графики готовы
+        window.__chartsReady = true;
+      }catch(e){
+        window.__chartsReady = true;
+      }
+    }
+
+    if (document.readyState === 'complete'){ readyCharts(); }
+    else { window.addEventListener('load', readyCharts); }
+  </script>
+</body>
+</html>

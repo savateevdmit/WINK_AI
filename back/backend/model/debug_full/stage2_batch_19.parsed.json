@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 27,
+      "id": 10,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Describes mild conflict involving spicy oil causing tears.",
+          "adv": "",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

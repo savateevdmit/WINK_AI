@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 33,
+      "id": 2,
+      "det": [
+        {
+          "label": "WEAPONS_USAGE",
+          "sev": "Moderate",
+          "scr": 55,
+          "rsn": "Depicts a character entering with a bat and using it to smash furniture, which is a non-graphic depiction of weapon usage.",
+          "adv": "Consider reducing the emphasis on weapon use or providing context that it's not used for harm.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 33,
+      "id": 1,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Scene depicts a character expressing anger and potential violent intent, with another character entering armed with a bat.",
+          "adv": "warn",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

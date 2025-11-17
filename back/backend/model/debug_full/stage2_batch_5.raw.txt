@@ -1,0 +1,11 @@
+<|channel|>analysis<|message|>We need to produce JSON with ans array. For each input label produce a det object. Input: scID 2, id 37, pt "Выглядит он довольно кроваво.", t "ИГОРЬ Мы в поле были и там из леса вышел человек весь в крови и мальчика нёс, он тоже был весь в крови.", nt "Я в бинокль видел.", vlc ["VIOLENCE_NON_GRAPHIC"].
+
+We need to evaluate content. The text describes a person in blood, but no graphic detail. It's violence non-graphic. According to bs: VIOLENCE_NON_GRAPHIC 40. So severity moderate? Wait mapping: bs value 40. Then mod? Not relevant. We compute score: base 40. No modifiers? None. So final score 40. Severity threshold: 25-49 Mild. So severity Mild. But check if any other content: no profanity, no drugs, etc. So only one label.
+
+We need to produce det object with label "VIOLENCE_NON_GRAPHIC", sev "Mild", scr 40, rsn: brief rationale. adv: maybe none? ok: true. suggest: null.
+
+Return JSON: {"ans":[{"scID":2,"id":37,"det":[{"label":"VIOLENCE_NON_GRAPHIC","sev":"Mild","scr":40,"rsn":"Describes a person covered in blood but no graphic detail or gore.","adv":"","ok":true,"suggest":null}]}]}
+
+Check format: adv string maybe empty. Provide "".
+
+Return only JSON.<|end|><|start|>assistant<|channel|>final<|message|>{"ans":[{"scID":2,"id":37,"det":[{"label":"VIOLENCE_NON_GRAPHIC","sev":"Mild","scr":40,"rsn":"Describes a person covered in blood but no graphic detail or gore.","adv":"","ok":true,"suggest":null}]}]}

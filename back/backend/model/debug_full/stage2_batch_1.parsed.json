@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 1,
+      "id": 1,
+      "det": [
+        {
+          "label": "MURDER_HOMICIDE",
+          "sev": "Moderate",
+          "scr": 70,
+          "rsn": "Explicit depiction of homicide with blood and gore.",
+          "adv": "Consider reducing graphic detail to lessen impact.",
+          "ok": true,
+          "suggest": "Reduce graphic detail"
+        }
+      ]
+    }
+  ]
+}

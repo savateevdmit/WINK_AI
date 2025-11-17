@@ -1,0 +1,58 @@
+{
+  "ans": [
+    {
+      "scID": 25,
+      "id": 6,
+      "det": [
+        {
+          "label": "SEX_SUGGESTIVE",
+          "sev": "Moderate",
+          "scr": 60,
+          "rsn": "Содержит сексуально намёки",
+          "adv": "Уменьшить сексуальный подтекст",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 26,
+      "id": 7,
+      "det": [
+        {
+          "label": "WEAPONS_USAGE",
+          "sev": "Moderate",
+          "scr": 55,
+          "rsn": "Использование оружия",
+          "adv": "Уменьшить насилие",
+          "ok": true,
+          "suggest": null
+        },
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Ненасильственное действие",
+          "adv": "Сократить сцену",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 26,
+      "id": 18,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Ненасильственное действие",
+          "adv": "Сократить сцену",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

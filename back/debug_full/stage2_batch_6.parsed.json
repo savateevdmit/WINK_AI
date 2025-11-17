@@ -1,0 +1,21 @@
+{
+  "ans": [
+    {
+      "scID": 6,
+      "id": 3,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Небольшой конфликт без насилия.",
+          "adv": "Можно оставить как есть.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    "{\"scID\":6,\"id\":4,\"det\":[{\"label\":\"CRIMINAL_ACTIVITY\",\"sev\":\"Moderate\",\"scr\":60,\"rsn\":\"Упоминание о преступной деятельности.\",\"adv\":\"Сократить детализацию или убрать.\",\"ok\":true,\"suggest\":null}]}",
+    "{\"scID\":6,\"id\":7,\"det\":[{\"label\":\"MILD_CONFLICT\",\"sev\":\"Mild\",\"scr\":25,\"rsn\":\"Небольшой конфликт без насилия.\",\"adv\":\"Можно оставить как есть.\",\"ok\":true,\"suggest\":null}]}"
+  ]
+}

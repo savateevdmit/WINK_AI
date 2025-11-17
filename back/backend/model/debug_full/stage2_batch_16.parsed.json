@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 25,
+      "id": 6,
+      "det": [
+        {
+          "label": "SEX_SUGGESTIVE",
+          "sev": "Moderate",
+          "scr": 60,
+          "rsn": "Suggestive sexual content involving a character staring at another's chest, which is non‑explicit but potentially uncomfortable.",
+          "adv": "Consider removing or toning down suggestive references to avoid discomfort.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

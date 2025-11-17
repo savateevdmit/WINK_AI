@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 29,
+      "id": 12,
+      "det": [
+        {
+          "label": "ALCOHOL_USE",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Alcohol consumption depicted.",
+          "adv": "",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

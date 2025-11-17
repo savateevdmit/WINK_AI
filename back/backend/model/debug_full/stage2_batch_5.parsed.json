@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 2,
+      "id": 37,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Describes a person covered in blood but no graphic detail or gore.",
+          "adv": "",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

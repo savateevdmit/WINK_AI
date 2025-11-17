@@ -1,0 +1,13 @@
+<|channel|>analysis<|message|>We need to produce JSON with ans array. For each input (Queries) we produce det objects for each label in vlc. Only allowed labels exactly. We have three queries.
+
+We must evaluate severity and score based on bs values, mod adjustments, etc. Let's compute.
+
+First query: vlc ["MILD_CONFLICT"]. bs for MILD_CONFLICT = 25. No modifiers? None. So base 25. Severity threshold: Mild is 25-49. So severity Mild. Score 25. Reason: conflict but mild. Advice: "Уменьшить конфликт, добавить диалог". ok true.
+
+Second query: vlc ["DANGEROUS_IMITABLE_ACTS"]. bs = 80. Modifiers? None. So 80. Severity Severe (80-100). Score 80. Reason: dangerous imitable act. Advice: "Убрать сцену или заменить на безопасный аналог". ok false.
+
+Third query: vlc ["MILD_CONFLICT"]. same as first: 25, Mild, ok true.
+
+Return JSON accordingly. Ensure each det object has label, sev, scr, rsn, adv, ok, suggest (null if not needed). For second, suggest maybe "DANGEROUS_ACTS_REMOVE". Use allowed suggestion? Not specified but we can use string. Provide null for others.
+
+Let's craft.<|end|><|start|>assistant<|channel|>final<|message|>{"ans":[{"scID":2,"id":20,"det":[{"label":"MILD_CONFLICT","sev":"Mild","scr":25,"rsn":"Небольшой конфликт без насилия, но присутствует напряжённость.","adv":"Уменьшить эмоциональную напряжённость, добавить диалог для разрядки.","ok":true,"suggest":null}]},"{\"scID\":4,\"id\":37,\"det\":[{\"label\":\"DANGEROUS_IMITABLE_ACTS\",\"sev\":\"Severe\",\"scr\":80,\"rsn\":\"Сцена с выдуванием огня из рта и использованием керосина представляет опасность для зрителей, особенно детей, и может быть имитирована.","adv":"Убрать сцену или заменить на безопасный аналог (например, использование фейерверка).","ok\":false,\"suggest\":\"DANGEROUS_ACTS_REMOVE\"}]}","{\"scID\":6,\"id\":3,\"det\":[{\"label\":\"MILD_CONFLICT\",\"sev\":\"Mild\",\"scr\":25,\"rsn\":\"Небольшой конфликт без насилия, но присутствует напряжённость.","adv\":\"Уменьшить эмоциональную напряжённость, добавить диалог для разрядки.\",\"ok\":true,\"suggest\":null}]}"]}

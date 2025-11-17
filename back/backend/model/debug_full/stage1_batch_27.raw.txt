@@ -1,0 +1,89 @@
+<|channel|>analysis<|message|>We need to analyze each sentence for labels. Provide JSON with scene_results array. Each scene has scID and snt array of objects with id and vlc array of label/conf pairs.
+
+We must assign at least one label per scene. If all sentences are neutral, assign MILD_CONFLICT to most contextually active sentence. Here we have violence: Oleg pulls a bat (bita). He uses bat to threaten. There's a physical confrontation. So likely labels: WEAPONS_USAGE? The list includes "WEAPONS_USAGE" and "WEAPONS_MENTION". Also "VIOLENCE_NON_GRAPHIC" maybe. Also "MURDER_HOMICIDE"? Not yet. It's threat, not murder. So label "WEAPONS_USAGE" or "VIOLENCE_NON_GRAPHIC". Also "MILD_CONFLICT" maybe for the confrontation.
+
+We need to decide which sentences have labels. Let's examine each sentence:
+
+0: "Катя за столом, задумчивая." neutral.
+
+1: "Олег наливает себе пиво." neutral.
+
+2: "Ну чё, давай за нас, чтоб всё всегда и ни копейкой меньше..." neutral.
+
+3: "Олег отпивает пиво." neutral.
+
+4: "Раздается шум в прихожей." neutral.
+
+5: "Олег быстро вынимает из-за тумбочки биту." This is mention of weapon. Label "WEAPONS_MENTION" maybe. Also could be "WEAPONS_USAGE" if he intends to use it. But just mention. So label "WEAPONS_MENTION".
+
+6: "Катя настороженно выглядывает в прихожую." neutral.
+
+7: "Там Алёна и Артур. алёна Ма, это мы." neutral.
+
+8: "Здрасьте, тёть Кать." neutral.
+
+9: "Алёна и Артур наощупь проходят в комнату Алёны. катя (Олегу) Зачем ты это сюда притащил? олег Да мало ли чё..." neutral.
+
+10: "Так спокойнее." neutral.
+
+11: "Ты это из-за Жени?" neutral.
+
+12: "Да при чём здесь твой..." neutral.
+
+13: "Так, просто, на всякий пожарный." neutral.
+
+14: "- оценка." neutral.
+
+15: "Прихожая." neutral.
+
+16: "Резко распахивается дверь." neutral.
+
+17: "На пороге Инофемёнов." neutral.
+
+18: "Инофемёнов" neutral.
+
+19: "Где ты?!" neutral.
+
+20: "Кухня." neutral.
+
+21: "Олег принимает мужественный вид, выходит с битой в прихожую." This is action with weapon. Label "WEAPONS_USAGE" and maybe "VIOLENCE_NON_GRAPHIC".
+
+22: "Прихожая." neutral.
+
+23: "Ну здесь я, чё-то хотел?" neutral.
+
+24: "Инофемёнов Не ты!" neutral.
+
+25: "Ты мне вообще неинтересен." neutral.
+
+26: "Ты чё, фуфел, вообще края попутал?" neutral.
+
+27: "Олег замахивается битой на Инофемёнов." This is threat. Label "WEAPONS_USAGE" and "VIOLENCE_NON_GRAPHIC".
+
+28: "Тот отталкивает Олега в сторону, Олег отлетает обратно в кухню." This is physical contact. Label "VIOLENCE_NON_GRAPHIC".
+
+29: "Инофемёнов идёт в комнату Алёны." neutral.
+
+Thus we have multiple sentences with labels. We need to assign confidence values 0-100. Let's set high confidence for clear labels, maybe 90. For WEAPONS_USAGE maybe 85. For VIOLENCE_NON_GRAPHIC maybe 80. For WEAPONS_MENTION maybe 70.
+
+We must include at least one label per scene. We have many. Good.
+
+Now produce JSON:
+
+{
+"scene_results":[
+{
+"scID":32,
+"snt":[
+{"id":5,"vlc":[{"label":"WEAPONS_MENTION","conf":70}]},
+{"id":21,"vlc":[{"label":"WEAPONS_USAGE","conf":85},{"label":"VIOLENCE_NON_GRAPHIC","conf":80}]},
+{"id":27,"vlc":[{"label":"WEAPONS_USAGE","conf":85},{"label":"VIOLENCE_NON_GRAPHIC","conf":80}]},
+{"id":28,"vlc":[{"label":"VIOLENCE_NON_GRAPHIC","conf":80}]}
+]
+}
+]
+}
+
+We need to ensure each sentence object has id and vlc array. Only include sentences with labels. That is fine.
+
+Return only JSON.<|end|><|start|>assistant<|channel|>final<|message|>{"scene_results":[{"scID":32,"snt":[{"id":5,"vlc":[{"label":"WEAPONS_MENTION","conf":70}]},{"id":21,"vlc":[{"label":"WEAPONS_USAGE","conf":85},{"label":"VIOLENCE_NON_GRAPHIC","conf":80}]},{"id":27,"vlc":[{"label":"WEAPONS_USAGE","conf":85},{"label":"VIOLENCE_NON_GRAPHIC","conf":80}]},{"id":28,"vlc":[{"label":"VIOLENCE_NON_GRAPHIC","conf":80}]}]}]}

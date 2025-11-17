@@ -1,0 +1,18 @@
+{
+  "scene_results": [
+    {
+      "scID": 4,
+      "snt": [
+        {
+          "id": 37,
+          "vlc": [
+            {
+              "label": "DANGEROUS_IMITABLE_ACTS",
+              "conf": 90
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

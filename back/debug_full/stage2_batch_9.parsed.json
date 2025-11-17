@@ -1,0 +1,49 @@
+{
+  "ans": [
+    {
+      "scID": 6,
+      "id": 11,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Небольшой конфликт без насилия.",
+          "adv": "Можно оставить без изменений.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 6,
+      "id": 34,
+      "det": [
+        {
+          "label": "CRIMINAL_ACTIVITY",
+          "sev": "Moderate",
+          "scr": 60,
+          "rsn": "Упоминание преступной деятельности.",
+          "adv": "Оставить, но уточнить контекст.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    },
+    {
+      "scID": 6,
+      "id": 46,
+      "det": [
+        {
+          "label": "MILD_CONFLICT",
+          "sev": "Mild",
+          "scr": 25,
+          "rsn": "Небольшой конфликт без насилия.",
+          "adv": "Можно оставить без изменений.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}

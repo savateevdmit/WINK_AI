@@ -1,0 +1,19 @@
+{
+  "ans": [
+    {
+      "scID": 21,
+      "id": 1,
+      "det": [
+        {
+          "label": "VIOLENCE_NON_GRAPHIC",
+          "sev": "Mild",
+          "scr": 40,
+          "rsn": "Non-graphic depiction of a violent act (throwing someone from balcony).",
+          "adv": "Consider providing context or reducing the intensity of the violence.",
+          "ok": true,
+          "suggest": null
+        }
+      ]
+    }
+  ]
+}
