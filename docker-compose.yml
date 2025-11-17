@@ -1,0 +1,36 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: back/Dockerfile
+    container_name: wink-backend
+    environment:
+      DATA_DIR: /data
+      TZ: "UTC"
+    volumes:
+      - backend-data:/data
+    ports:
+      - "8000:8000"
+    networks:
+      - wink-net
+
+  frontend:
+    build:
+      context: .
+      dockerfile: front-main/Dockerfile
+      args:
+        VITE_API_BASE_URL: "http://backend:8000"
+    container_name: wink-frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - wink-net
+
+volumes:
+  backend-data:
+
+networks:
+  wink-net:
+    driver: bridge
