@@ -45,4 +45,4 @@ RUN mkdir -p "$DATA_DIR"
 EXPOSE 8000
 
 # Продовый запуск (без --reload)
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "backend.main:app", "--host", "127.0.0.1", "--port", "8000"]
